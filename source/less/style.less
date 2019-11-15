@@ -1,12 +1,24 @@
-@import "programs.less"
+@import "page-header.less";
+@import "main-nav.less";
+@import "page-main.less";
+@import "description.less";
+@import "programs.less";
+@import "how-work.less";
+@import "example.less";
+@import "page-footer.less";
+@import "social.less";
+@import "copyright.less";
+
 html,
 body {
-  min-width: 320px;
+  width: 320px;
   min-height: 3182px;
 }
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  padding: 0 0;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -18,5 +30,27 @@ body {
   background-repeat: no-repeat;
 }
 a {
+  text-decoration: none;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  background-color: #68b738;
+  color: #ffffff;
   text-decoration: none;
 }
