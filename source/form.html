@@ -31,7 +31,7 @@
       <p>заполните анкету и мы подберем программу для вашего кота</p>
       <form method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="cat">
-      <div class="cat-wrapper">
+      <div class="cat__wrapper">
       <label class="cat__nickname" for="nickname">Имя:<sup>*</sup></label>
       <input class="cat__nickname-input" name="nickname" type="text" id="nickname" placeholder="Барсик">
       <label class="cat__weight" for="weight">Вес (кг):<sup>*</sup></label>
@@ -41,12 +41,14 @@
       </div>
       </fieldset>
       <fieldset class="form-programs">
-        <input class="form-programs__slim-input" name="programs" type="radio" id="slim">
+      <div class="form-programs__wrapper">
+        <input class="form-programs__slim-input" name="programs" type="radio" id="slim" checked>
         <label class="form-programs__slim" for="slim">похудение</label>
         <input class="form-programs__mass-set-input" name="programs" type="radio" id="mass-set">
         <label class="form-programs__mass-set" for="mass-set">набор массы</label>
         <input class="form-programs__advice-input" name="programs" type="radio" id="advice">
         <label class="form-programs__advice" for="advice">не знаю (нужен ваш совет)</label>
+      </div>
       </fieldset>
       <fieldset class="owner">
         <legend class="owner__legend">Контактные данные (владельца кота)</legend>
