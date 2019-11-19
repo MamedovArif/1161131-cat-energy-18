@@ -1,7 +1,18 @@
 .description {
   min-height: 500px;
-  padding-top: 29px;
   position: relative;
+  outline: 1px solid black;
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    min-height: 840px;
+    }
+}
+@media (min-width: @desktop-width) {
+  .description {
+    min-height: 650px;
+  }
 }
 .description {
   content: "";
@@ -12,9 +23,6 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  outline: 1px solid red;
-  margin-left: -20px;
 }
 .description::before {
   content: "";
@@ -38,7 +46,6 @@
   font-weight: 400;
   color: #ffffff;
   text-align: center;
-  outline: 1px solid red;
 }
 .description__paragraph {
   font-size: 14px;
@@ -57,5 +64,5 @@
   margin-top: 300px;
   text-align: center;
   padding: 11px 73px;
-  margin-left: 20px;
 }
+
