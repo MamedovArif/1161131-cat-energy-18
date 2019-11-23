@@ -1,28 +1,41 @@
 .comment {
-  height: 237px;
+  height: 220px;
   border: none;
   outline: 1px solid red;
-  legend {
+  position: relative;
+}
+@media (min-width: @tablet-width) {
+  .comment {
+  height: 335px;
+  }
+}
+legend {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 28px;
-  position: relative;
-  }
-  legend {
   position: absolute;
-  }
+  color: green;
+}
+.comment__container {
+  width: 275px;
+  height: 147px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+@media (min-width: @tablet-width) {
   .comment__container {
-    width: 280px;
-    height: 147px;
-    margin: 0 auto;
-    margin-top: 80px;
-    }
-  textarea {
-    width: 147px;
-    height: 100%;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    }
+  width: 630px;
+  height: 170px;
+  margin-top: 170px;
   }
 }
+textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+

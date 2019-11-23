@@ -29,9 +29,12 @@
       </nav>
     </header>
     <main class="form-page">
+    <div class="form-page__start">
       <h1>Подбор программы</h1>
-      <p>заполните анкету и мы подберем программу для вашего кота</p>
+      <p>заполните анкету и мы подберем программу питания для вашего кота</p>
+    </div>
       <form method="get" action="https://echo.htmlacademy.ru">
+    <div class="form-page__first-container">
       <fieldset class="cat">
       <label class="cat__nickname" for="nickname">Имя:<sup>*</sup></label>
       <input class="cat__nickname-input" name="nickname" type="text" id="nickname" placeholder="Барсик">
@@ -50,6 +53,7 @@
         <label class="form-programs__label" for="advice">не знаю (нужен ваш совет)</label>
       </div>
       </fieldset>
+    </div>
       <fieldset class="owner">
         <legend>Контактные данные (владельца кота)</legend>
         <div class="owner__container">
@@ -67,6 +71,7 @@
       </fieldset>
       <fieldset class="additionally">
         <legend class="additionally__legend">Дополнительно</legend>
+      <div class="additionally__container">
         <input class="additionally__substitute-input" name="substitute" type="checkbox" id="substitute" checked>
         <label class="additionally__substitute" for="substitute">сахарозаменитель</label>
         <input class="additionally__water-input" name="water" type="checkbox" id="water">
@@ -77,6 +82,7 @@
         <label class="additionally__vitamins" for="vitamins">витамины</label>
         <button class="additionally__button button">Отправить заявку</button>
         <small><sup>*</sup>&mdash;Обязательные поля</small>
+      </div>
       </fieldset>
      </form>
     </main>
