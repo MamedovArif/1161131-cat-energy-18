@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -31,14 +33,12 @@
       <p>заполните анкету и мы подберем программу для вашего кота</p>
       <form method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="cat">
-      <div class="cat__wrapper">
       <label class="cat__nickname" for="nickname">Имя:<sup>*</sup></label>
       <input class="cat__nickname-input" name="nickname" type="text" id="nickname" placeholder="Барсик">
       <label class="cat__weight" for="weight">Вес (кг):<sup>*</sup></label>
       <input class="cat__weight-input" name="nickname" type="text" id="weight" placeholder="7">
       <label class="cat__age" for="age">Возраст (лет):</label>
       <input class="cat__age-input" name="nickname" type="text" id="age" placeholder="7">
-      </div>
       </fieldset>
       <fieldset class="form-programs">
       <div class="form-programs__wrapper">
@@ -52,14 +52,18 @@
       </fieldset>
       <fieldset class="owner">
         <legend>Контактные данные (владельца кота)</legend>
+        <div class="owner__container">
         <label class="owner__email" for="email">e-mail:<sup>*</sup></label>
         <input class="owner__email-input" id="email" name="email" type="email" placeholder="Kuklachev@gmail.com">
         <label class="owner__tel" for="tel">телефон:<sup>*</sup></label>
         <input class="owner__tel-input" id="tel" name="tel" type="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+      </div>
       </fieldset>
       <fieldset class="comment">
       <legend class="comment__legend">Комментарий</legend>
+    <div class="comment__container">
       <textarea class="comment__texterea" rows="5" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+    </div>
       </fieldset>
       <fieldset class="additionally">
         <legend class="additionally__legend">Дополнительно</legend>
