@@ -4,6 +4,18 @@
   height: 127px;
   outline: 1px solid black;
 }
+@media (min-width: @tablet-width) {
+  .product-add {
+  min-height: 137px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .product-add {
+  display: flex;
+  flex-direction: row;
+  min-height: 70px;
+  }
+}
 .product-add h3 {
   margin: 0;
   padding: 0;
