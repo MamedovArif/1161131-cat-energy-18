@@ -3,29 +3,23 @@
 
   outline: 1px solid red;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   min-width: 320px;
   margin: 0 auto;
 }
 @media (min-width: @tablet-width) {
   .page-header {
+    width: 710px;
     min-height: 110px;
-  }
-}
-@media (min-width: @desktop-width) {
-  .page-header {
-  min-height: 125px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .page-header {
-  width: 704px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 @media (min-width: @desktop-width) {
   .page-header {
   width: 1220px;
+  min-height: 125px;
   }
 }
 .page-header__logo {
@@ -38,7 +32,8 @@
 }
 .page-header__logo-image {
   outline: 1px solid black;
-  margin: 13px 21px;
+  margin-top: 13px;
+  margin-left: 21px;
 }
 
 

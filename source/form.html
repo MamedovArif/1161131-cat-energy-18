@@ -10,19 +10,19 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="time.html" class="page-header__logo logotype">
-        <img class="logotype__image" src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list site-list visually-hidden">
-          <li class="site-list__item site-list__item--active">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a>Подбор программы</a>
           </li>
         </ul>
@@ -87,15 +87,15 @@
      </form>
     </main>
 <footer class="page-footer">
-      <div class="page-footer__data">
-        <p class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
+    <div class="page-footer__data">
+      <p class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
       <a class="page-footer__map">
+        <img class="page-footer__map-image" src="../img/time.png" width="318" height="361" alt="карта">
       </a>
-    <div class="page-footer__low">
-      <a href="index.html" class="page-footer__logo logotype">
-        <img class="page-footer__logo-image logotype__image" src="../img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="../img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -103,17 +103,18 @@
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
         </ul>
         </div>
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
-    </div>
     </footer>
+
+    <script src="js/nav-toggle.js"></script>
   </body>
 </html>
