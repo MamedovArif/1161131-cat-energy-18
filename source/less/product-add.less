@@ -1,0 +1,36 @@
+.product-add {
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  height: 127px;
+  outline: 1px solid black;
+}
+@media (min-width: @tablet-width) {
+  .product-add {
+  min-height: 137px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .product-add {
+  display: flex;
+  flex-direction: row;
+  min-height: 70px;
+  }
+}
+.product-add h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  margin-left: 2px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.product-add__table {
+  font-size: 14px;
+  line-height: 14px;
+  outline: 1px solid red;
+  margin-bottom: 7px;
+  vertical-align: middle;
+}

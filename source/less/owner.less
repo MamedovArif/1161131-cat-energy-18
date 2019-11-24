@@ -1,0 +1,51 @@
+.owner {
+  height: 200px;
+  border: none;
+  outline: 1px solid red;
+  position: relative;
+  &__container {
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  height: 102px;
+  outline: 1px solid red;
+  margin: 0 auto;
+  margin-top: 106px;
+  }
+  legend {
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  }
+  label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  }
+  input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 45px;
+  }
+}
+@media (min-width: @tablet-width) {
+  .owner {
+  height: 300px;
+  }
+  .owner__container {
+  margin-top: 185px;
+  width: 634px;
+  height: 124px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .owner {
+  height: 215px;
+  }
+  .owner__container {
+  margin-top: 175px;
+  width: 1220px;
+  height: 50px;
+  }
+}
