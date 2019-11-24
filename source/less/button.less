@@ -1,0 +1,35 @@
+.button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  background-color: #68b738;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  text-align: center;
+
+  border: none;
+  color: #ffffff;
+  text-decoration: none;
+  outline: 1px solid red;
+}
+@media (min-width: @tablet-width) {
+  .button {
+  width: 250px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .button {
+  width: 170px;
+  }
+}
+.button--gray {
+  background-color: gray;
+  color: #000000;
+}
