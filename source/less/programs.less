@@ -40,12 +40,40 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
+  width: 190px;
+  margin-top: 30px;
+  outline: 1px solid red;
+  position: relative;
+  }
+  &__description::before {
+  content: "";
+  width: 240px;
+  height: 1px;
+  position: absolute;
+  top: 112px;
+  left: 0;
+  background-color: #d9d9d9;
   }
   &__link {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
+  outline: 1px solid red;
+  display: block;
+  margin-top: 43px;
+  position: relative;
+  }
+  &__link::before {
+  content: "";
+  width: 25px;
+  height: 11px;
+  position: absolute;
+  top: 4px;
+  left: 96px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   }
 
 }
