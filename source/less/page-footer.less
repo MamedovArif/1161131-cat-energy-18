@@ -3,7 +3,7 @@
   width: 320px;
   margin: 0 auto;
   opacity: 0.5;
-  padding: 30px 0;
+  padding: 28px 0;
   display: flex;
   flex-direction: column;
 }
@@ -25,10 +25,10 @@
 .page-footer__data {
   outline: 1px solid red;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 20px;
-  min-height: 50px;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 @media (min-width: @tablet-width) {
   .page-footer__data {
@@ -51,30 +51,29 @@
 .page-footer__invitation {
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  width: 137px;
+  font-weight: normal;
   outline: 1px solid red;
-}
-.page-footer__address {
-  margin: 0;
-  padding: 0;
-  outline: 1px solid red;
-}
-.page-footer__invitation {
+  color: green;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 .page-footer__address {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
   font-size: 14px;
   line-height: 20px;
+  width: 137px;
 }
 
 .page-footer__map {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   outline: 1px solid black;
   content: "";
-  opacity: 0.8;
+  opacity: 0.4;
   width: 318px;
   height: 361px;
   background-image: url("../img/time.png");
@@ -120,7 +119,7 @@
 }
 .page-footer__logo {
   display: block;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
   outline: 1px solid red;
 }
 .page-footer__logo-image {
@@ -151,5 +150,9 @@
   color: #444444;
   display: block;
   padding-top: 24px;
-  outline: 1px solid green;
+  color: green;
+  margin-left: 40px;
+  font-weight: normal;
+  transform: scaleX(1.35);
+  ouline: 1px solid green;
 }
