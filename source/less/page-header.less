@@ -42,11 +42,17 @@
   background-position: 0 0;
 
   @media (min-width: @tablet-width) {
-  background-image: url("../img/logo-tablet.svg");
-  top: 24px;
-  left: 2px;
-  width: 173px;
-  height: 58px;
+    background-image: url("../img/logo-tablet.svg");
+    top: 24px;
+    left: 2px;
+    width: 173px;
+    height: 58px;
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/logo-desktop.svg");
+    transform: scale(1.15);
+    top: 58px;
+    left: 15px;
   }
 }
 
