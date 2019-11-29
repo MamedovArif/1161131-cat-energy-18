@@ -39,18 +39,18 @@
   .page-footer__data {
 
   position: absolute;
-  top: 95px;
-  left: -20px;
+  top: 93px;
+  left: -70px;
   width: 570px;
   height: 200px;
   opacity: 1;
-  background-color: black;
+
   }
 }
 .page-footer__invitation {
   margin: 0;
   padding: 0;
-  width: 137px;
+  width: 127px;
   font-weight: normal;
   outline: 1px solid red;
   color: green;
@@ -63,6 +63,9 @@
     line-height: 25px;
     width: 157px;
   }
+  @media (min-width: @desktop-width) {
+    width: 285px;
+  }
 }
 .page-footer__address {
   margin: 0;
@@ -70,12 +73,15 @@
   outline: 1px solid red;
   font-size: 14px;
   line-height: 20px;
-  width: 157px;
+  width: 150px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
     width: 137px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 250px;
   }
 }
 
@@ -100,14 +106,13 @@
     background-position: 0 0;
     background-repeat: no-repeat;
     margin-bottom: 0;
-
-
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     height: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
+    opacity: 0;
   }
 }
 

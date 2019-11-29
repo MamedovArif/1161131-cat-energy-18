@@ -12,6 +12,15 @@
 
   @media (min-width: @desktop-width) {
     min-height: 665px;
+    padding: 59px 0;
+
+  }
+}
+.example__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .example__title {
@@ -26,6 +35,20 @@
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+@media (min-width: @desktop-width) {
+  .example__desktop-grid1 {
+    width: 450px;
+    outline: 1px solid blue;
+    margin-top: 75px;
+  }
+  .example__desktop-grid2 {
+    width: 450px;
+    outline: 1px solid blue;
   }
 }
 .example__history {
@@ -43,13 +66,20 @@
     margin-top: 62px;
     width: 500px;
   }
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    margin-top: 69px;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .example__preface {
+.example__preface {
+  @media (min-width: @tablet-width) {
     outline: 1px solid red;
     display: flex;
     justify-content: space-between;
+  }
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -62,6 +92,9 @@
   @media (min-width: @tablet-width) {
     margin-top: 25px;
     width: 367px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 40px;
   }
 }
 .example__indicators p {
@@ -131,6 +164,11 @@
     font-weight: bold;
     width: 180px;
     margin-top: 60px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    text-align: left;
+    margin-top: 37px;
   }
 }
 .example__toggles {
