@@ -9,9 +9,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
-      </a>
+      <a class="page-header__logo"></a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
@@ -31,7 +29,10 @@
       <h1>Каталог продукции</h1>
       <ul class="main-catalog__list">
         <li class="main-catalog__item product">
-          <img class="product__image product__image--pro-chicken500" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="корм для котов">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../img/chicken-small-tablet@1x.png">
+          <img class="product__image product__image--pro-chicken500" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144"  alt="корм для котов">
+        </picture>
           <h3>cat energy pro 500 г</h3>
           <table class="product__table">
             <tr>
@@ -70,7 +71,10 @@
           <a href="order.html" class="product__link button">Заказать</a>
         </li>
         <li class="main-catalog__item product">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../img/chicken-big-tablet@1x.png">
           <img class="product__image product__image--pro-chicken1000" src="../img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="корм для котов">
+        </picture>
           <h3>cat energy pro 1000 г</h3>
           <table class="product__table">
             <tr>
@@ -109,7 +113,10 @@
           <a href="order.html" class="product__link button">Заказать</a>
         </li>
         <li class="main-catalog__item product">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../img/fish-small-tablet@1x.png">
           <img class="product__image product__image--pro-fish500" src="../img/fish-small-mobile@1x.jpg" width="140" height="144" alt="корм для котов">
+        </picture>
           <h3>cat energy pro 500 г</h3>
           <table class="product__table">
             <tr>
@@ -148,7 +155,10 @@
           <a href="order.html" class="product__link button">Заказать</a>
         </li>
         <li class="main-catalog__item product">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../img/fish-big-tablet@1x.png">
           <img class="product__image product__image--pro-fish1000" src="../img/fish-big-mobile@1x.jpg" width="140" height="144" alt="корм для котов">
+        </picture>
           <h3>cat energy pro 1000 г</h3>
           <table class="product__table">
             <tr>
@@ -187,7 +197,10 @@
           <a href="order.html" class="product__link button">Заказать</a>
         </li>
         <li class="main-catalog__item product">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../img/buckwheat-small-tablet@1x.png">
           <img class="product__image product__image--slim-buckwheat500" src="../img/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="корм для котов">
+        </picture>
           <h3>cat energy slim 500 г</h3>
           <table class="product__table">
             <tr>
@@ -226,7 +239,10 @@
           <a href="order.html" class="product__link button">Заказать</a>
         </li>
         <li class="main-catalog__item product">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../img/buckwheat-big-tablet@1x.png">
           <img class="product__image product__image--slim-buckwheat1000" src="../img/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="корм для котов">
+        </picture>
           <h3>cat energy slim 1000 г</h3>
           <table class="product__table">
             <tr>
@@ -265,6 +281,8 @@
           <a href="order.html" class="product__link button">Заказать</a>
         </li>
         <li class="main-catalog__item product">
+        <picture>
+          <source media="(min-width: 768px)" srcset="../img/rice-small-tablet@1x.png">
           <img class="product__image product__image--slim-rice500" src="../img/rice-small-mobile@1x.jpg" width="140" height="144" alt="корм для котов">
           <h3>cat energy slim 500 г</h3>
           <table class="product__table">

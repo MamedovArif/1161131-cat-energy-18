@@ -10,7 +10,8 @@
   width: 323px;
   height: 429px;
   outline: 1px solid black;
-  margin-bottom: 140px;
+  margin-bottom: 142px;
+  position: relative;
   }
   .product:nth-child(7) {
   margin-bottom: 0;
@@ -27,15 +28,56 @@
   }
 }
 .product__image {
-  margin: 0;
-  padding: 0;
   outline: 1px solid red;
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
-
 }
+
+@media (min-width: @tablet-width) {
+  .product__image--pro-chicken500 {
+    top: -47px;
+    width: 324px;
+    height: 172px;
+  }
+
+  .product__image--pro-chicken1000 {
+    top: -82px;
+    width: 324px;
+    height: 208px;
+  }
+
+  .product__image--pro-fish500 {
+    top: -47px;
+    width: 324px;
+    height: 174px;
+  }
+
+  .product__image--pro-fish1000 {
+    top: -82px;
+    width: 324px;
+    height: 208px;
+  }
+
+  .product__image--slim-buckwheat500 {
+    top: -44px;
+    width: 324px;
+    height: 174px;
+  }
+
+  .product__image--slim-buckwheat1000 {
+    top: -80px;
+    width: 324px;
+    height: 208px;
+  }
+
+  .product__image--slim-rice500 {
+    top: -43px;
+    width: 324px;
+    height: 174px;
+  }
+}
+
 
 .product h3 {
   margin: 0;
@@ -45,10 +87,20 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
-  font-family: 20px;
+  line-height: 20px;
   max-width: 80px;
   color: green;
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 130px;
+    margin-top: 162px;
+    margin-left: 99px;
+
+    text-align: center;
+  }
 }
 .product__table {
   font-size: 12px;
@@ -59,6 +111,15 @@
   margin-left: 140px;
 
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 27px;
+    margin-right: 32px;
+    margin-bottom: 37px;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: 16px;
+  }
 }
 .product__link {
   display: block;
