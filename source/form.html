@@ -34,26 +34,28 @@
       <form method="get" action="https://echo.htmlacademy.ru">
     <div class="form-page__first-container">
       <fieldset class="cat">
+    <div class="cat__wrapper">
       <label class="cat__nickname" for="nickname">Имя:<sup>*</sup></label>
       <input class="cat__nickname-input" name="nickname" type="text" id="nickname" placeholder="Барсик">
       <label class="cat__weight" for="weight">Вес (кг):<sup>*</sup></label>
       <input class="cat__weight-input" name="nickname" type="text" id="weight" placeholder="7">
       <label class="cat__age" for="age">Возраст (лет):</label>
       <input class="cat__age-input" name="nickname" type="text" id="age" placeholder="7">
+    </div>
       </fieldset>
       <fieldset class="form-programs">
       <div class="form-programs__wrapper">
-        <input class="form-programs__input" name="programs" type="radio" id="slim" checked>
+        <input class="form-programs__input visually-hidden" name="programs" type="radio" id="slim" checked>
         <label class="form-programs__label" for="slim">похудение</label>
-        <input class="form-programs__input" name="programs" type="radio" id="mass-set">
+        <input class="form-programs__input visually-hidden" name="programs" type="radio" id="mass-set">
         <label class="form-programs__label" for="mass-set">набор массы</label>
-        <input class="form-programs__input" name="programs" type="radio" id="advice">
+        <input class="form-programs__input visually-hidden" name="programs" type="radio" id="advice">
         <label class="form-programs__label" for="advice">не знаю (нужен ваш совет)</label>
       </div>
       </fieldset>
     </div>
       <fieldset class="owner">
-        <legend>Контактные данные (владельца кота)</legend>
+        <legend class="owner__legend">Контактные данные (владельца кота)</legend>
         <div class="owner__container">
         <label class="owner__email" for="email">e-mail:<sup>*</sup></label>
         <input class="owner__email-input" id="email" name="email" type="email" placeholder="Kuklachev@gmail.com">
@@ -70,16 +72,16 @@
       <fieldset class="additionally">
         <legend class="additionally__legend">Дополнительно</legend>
       <div class="additionally__container">
-        <input class="additionally__substitute-input" name="substitute" type="checkbox" id="substitute" checked>
+        <input class="additionally__substitute-input visually-hidden" name="substitute" type="checkbox" id="substitute" checked>
         <label class="additionally__substitute" for="substitute">сахарозаменитель</label>
-        <input class="additionally__water-input" name="water" type="checkbox" id="water">
+        <input class="additionally__water-input visually-hidden" name="water" type="checkbox" id="water">
         <label class="additionally__water" for="water">питьевая вода</label>
-        <input class="additionally__milk-input" name="milk" type="checkbox" id="milk">
+        <input class="additionally__milk-input visually-hidden" name="milk" type="checkbox" id="milk">
         <label class="additionally__milk" for="milk">молоко</label>
-        <input class="additionally__vitamins-input" name="vitamins" type="checkbox" id="vitamins">
+        <input class="additionally__vitamins-input visually-hidden" name="vitamins" type="checkbox" id="vitamins">
         <label class="additionally__vitamins" for="vitamins">витамины</label>
         <button class="additionally__button button">Отправить заявку</button>
-        <small><sup>*</sup>&mdash;Обязательные поля</small>
+        <small><sup>*</sup>&mdash; Обязательные поля</small>
       </div>
       </fieldset>
      </form>

@@ -3,14 +3,11 @@
   border: none;
   outline: 1px solid red;
   position: relative;
-}
-@media (min-width: @tablet-width) {
-  .additionally {
-  height: 430px;
+
+  @media (min-width: @tablet-width) {
+    height: 430px;
   }
-}
-@media (min-width: @desktop-width) {
-  .additionally {
+  @media (min-width: @desktop-width) {
   height: 385px;
   }
 }
@@ -22,32 +19,80 @@
   margin-top: 83px;
   display: flex;
   flex-direction: column;
-}
-@media (min-width: @tablet-width) {
-  .additionally__container {
+
+  @media (min-width: @tablet-width) {
     width: 630px;
     height: 220px;
     margin-top: 150px;
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
-@media (min-width: @desktop-width) {
-  .additionally__container {
+  @media (min-width: @desktop-width) {
     width: 1220px;
     height: 150px;
     margin-top: 160px;
   }
 }
-  legend {
-  position: absolute;
+.additionally__legend {
   font-size: 24px;
   line-height: 24px;
-  }
-  label {
+  position: absolute;
+  max-width: 222px;
+  padding-right: 21px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  outline: 1px solid red;
+  top: 30px;
+  left: 0px;
+  z-index: 5;
+}
+.additionally::before {
+  content: "";
+  position: absolute;
+  top: 43px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: @bg-green;
+}
+
+.additionally label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  }
+  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-left: 46px;
+  position: relative;
+}
+.additionally label::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -45px;
+  width: 28px;
+  height: 29px;
+  border: 1px solid red;
+}
+.additionally input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  width: 18px;
+  height: 10px;
+  background-color: transparent;
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+  transform: rotate(-45deg);
+}
+.additionally__button {
+  margin-top: 22px;
+}
+.additionally small {
+  text-align: center;
+  margin-top: 14px;
+}
 
