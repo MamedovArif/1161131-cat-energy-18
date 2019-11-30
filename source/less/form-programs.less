@@ -33,6 +33,14 @@
   margin-bottom: 3px;
   margin-left: 54px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 28px;
+    margin-bottom: 5px;
+    margin-left: 76px;
+  }
 }
 .form-programs__label::before {
   content: "";
@@ -44,6 +52,13 @@
   border-radius: 50%;
   border: 1px solid red;
   background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    width: 39px;
+    height: 39px;
+    top: -9px;
+    left: -58px;
+  }
 }
 .form-programs__input:checked + label::after {
   content: "";
@@ -54,5 +69,12 @@
   height: 12px;
   border-radius: 50%;
   background-color: blue;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: -47px;
+  }
 }
 

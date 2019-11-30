@@ -26,13 +26,16 @@
   outline: 3px solid green;
   margin-top: 39px;
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .cat__wrapper input {
   margin: 0;
   padding: 0;
   height: 45px;
-
 
   outline: 1px solid red;
   margin-left: 16px;
@@ -45,6 +48,13 @@
   box-sizing: border-box;
   flex-grow: 1;
 
+  @media (min-width: @tablet-width) {
+    min-width: 500px;
+    height: 52px;
+    margin-left: 21px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 .cat__wrapper label {
   font-size: 16px;
@@ -54,6 +64,13 @@
   margin-left: 19px;
   outline: 1px solid red;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
 }
 
 
