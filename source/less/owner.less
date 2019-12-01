@@ -8,7 +8,8 @@
     height: 300px;
   }
   @media (min-width: @desktop-width) {
-    height: 215px;
+    height: 235px;
+    padding: 0;
   }
 }
 .owner__legend {
@@ -35,6 +36,11 @@
     top: 77px;
     left: 27px;
   }
+  @media (min-width: @desktop-width) {
+    padding-left: 0px;
+    top: 69px;
+    left: -2px;
+  }
 }
 .owner::before {
   content: "";
@@ -47,6 +53,9 @@
 
   @media (min-width: @tablet-width) {
     top: 100px;
+  }
+  @media (min-width: @desktop-width) {
+    top: 90px;
   }
 }
 
@@ -69,7 +78,7 @@
     height: 124px;
   }
   @media (min-width: @desktop-width) {
-    margin-top: 175px;
+    margin-top: 179px;
     width: 1220px;
     height: 50px;
   }
@@ -89,6 +98,10 @@
     line-height: 20px;
     margin-right: 18px;
     margin-left: 3px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+    align-self: flex-start;
   }
 }
 .owner__container input {
@@ -112,6 +125,15 @@
   }
 }
 
+.owner__email-input {
+  @media (min-width: @desktop-width) {
+    margin-right: 78px;
+    flex-grow: 0;
+    min-width: 485px;
+    outline: 1px solid blue;
+  }
+}
+
 .owner__email::before {
   content: "";
   position: absolute;
@@ -126,6 +148,10 @@
   @media (min-width: @tablet-width) {
     top: 8px;
     left: 594px;
+  }
+  @media (min-width: @desktop-width) {
+    top: 12px;
+    left: 526px;
   }
 }
 .owner__tel::before {
@@ -142,5 +168,9 @@
   @media (min-width: @tablet-width) {
     top: 9px;
     left: 594px;
+  }
+  @media (min-width: @desktop-width) {
+    top: 10px;
+    left: 537px;
   }
 }

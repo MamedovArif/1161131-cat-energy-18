@@ -8,32 +8,11 @@
     height: 430px;
   }
   @media (min-width: @desktop-width) {
-  height: 385px;
+    height: 395px;
+    padding: 0;
   }
 }
-.additionally__container {
-  width: 280px;
-  height: 300px;
-  outline: 1px solid black;
-  margin: 0 auto;
-  margin-top: 83px;
-  display: flex;
-  flex-direction: column;
 
-  @media (min-width: @tablet-width) {
-    width: 700px;
-    min-height: 220px;
-    margin-top: 150px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-  }
-  @media (min-width: @desktop-width) {
-    width: 1220px;
-    height: 150px;
-    margin-top: 160px;
-  }
-}
 .additionally__legend {
   font-size: 24px;
   line-height: 24px;
@@ -58,6 +37,11 @@
     top: 63px;
     left: 27px;
   }
+  @media (min-width: @desktop-width) {
+    padding-left: 0px;
+    top: 66px;
+    left: -2px;
+  }
 }
 .additionally::before {
   content: "";
@@ -69,7 +53,31 @@
   background-color: @bg-green;
 
   @media (min-width: @tablet-width) {
-    top: 85px;
+    top: 89px;
+  }
+}
+
+.additionally__container {
+  width: 280px;
+  height: 300px;
+  outline: 1px solid black;
+  margin: 0 auto;
+  margin-top: 83px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 700px;
+    min-height: 220px;
+    margin-top: 150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    height: 150px;
+    margin-top: 160px;
   }
 }
 
@@ -91,6 +99,21 @@
     min-width: 254px;
     margin-bottom: 42px;
     align-self: flex-start;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+    margin-right: 37px;
+    margin-left: 55px;
+
+    min-width: 234px;
+  }
+}
+
+.additionally .additionally__vitamins {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    min-width: 0px;
+    outline: 1px solid blue;
   }
 }
 
@@ -139,6 +162,12 @@
     line-height: 20px;
     margin-right: 61px;
   }
+  @media (min-width: @desktop-width) {
+    margin-left: 0px;
+    width: 568px;
+    margin-top: 28px;
+    margin-right: 80px;
+  }
 }
 .additionally small {
   text-align: center;
@@ -148,6 +177,11 @@
     font-size: 16px;
     line-height: 16px;
     margin-top: 34px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 39px;
   }
 }
 
