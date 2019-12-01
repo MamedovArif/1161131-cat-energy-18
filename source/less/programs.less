@@ -136,7 +136,8 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
-  width: 190px;
+  font-family: "Arial";
+  width: 225px;
   margin-top: 30px;
   outline: 1px solid red;
   position: relative;
@@ -144,14 +145,22 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 270px;
+    width: 375px;
     margin-top: 23px;
   }
   @media (min-width: @desktop-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 380px;
+    width: 465px;
     margin-top: 71px;
+  }
+}
+.programs__item:nth-child(2) .programs__description  {
+  @media (min-width: @tablet-width) {
+    width: 342px;
+  }
+  @media (min-width: @tablet-width) {
+    width: 465px;
   }
 }
 .programs__description::before {

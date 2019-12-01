@@ -73,7 +73,8 @@
   outline: 1px solid red;
   font-size: 14px;
   line-height: 20px;
-  width: 150px;
+  font-family: "Arial";
+  width: 140px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -87,36 +88,30 @@
 
 .page-footer__map {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   outline: 1px solid black;
-  content: "";
-  width: 318px;
-  height: 361px;
-  background-image: url("../img/time.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    background-image: none;
-
-    content: "";
     width: 767px;
     height: 400px;
-    background-image: url("../img/bg-map-tablet@1x.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
     height: 400px;
-    background-image: url("../img/bg-map-desktop@1x.png");
-    opacity: 0;
   }
 }
-
-
+.page-footer__map-image {
+  @media (min-width: @tablet-width) {
+    width: 767px;
+    height: 400px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    height: 400px;
+  }
+}
 .page-footer__low {
   display: flex;
   flex-direction: column;
@@ -140,11 +135,15 @@
   outline: 1px solid blue;
   width: 128px;
   height: 24px;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
-    margin-top: 3px;
+    margin-top: 25px;
     margin-left: 31px;
     margin-right: 150px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 .page-footer__logo-image {
@@ -161,6 +160,9 @@
   @media (min-width: @tablet-width) {
     min-height: 0;
     margin-left: 140px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 61px;
   }
 }
 .page-footer__copyright::before {
@@ -185,11 +187,12 @@
   background-color: transparent;
   color: #444444;
   display: block;
-  padding-top: 24px;
+  padding-top: 27px;
   color: green;
-  margin-left: 40px;
-  font-weight: normal;
-  transform: scaleX(1.35);
+
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Arial";
   ouline: 1px solid green;
 
   @media (min-width: @tablet-width) {
