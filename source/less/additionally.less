@@ -1,8 +1,10 @@
 .additionally {
-  height: 377px;
+  min-height: 377px;
   border: none;
   outline: 1px solid red;
   position: relative;
+
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     height: 430px;
@@ -13,20 +15,25 @@
   }
 }
 
+.additionally__wrapper {
+  outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-item: flex-start;
+}
 .additionally__legend {
   font-size: 24px;
   line-height: 24px;
-  position: absolute;
-  max-width: 222px;
-  padding-right: 21px;
-  padding-left: 20px;
-  box-sizing: border-box;
   background-color: #ffffff;
 
   outline: 1px solid red;
-  top: 30px;
-  left: 0px;
-  z-index: 5;
+  max-width: 184px;
+  margin-top: 31px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 16px;
+  box-sizing: border-box;
+
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -46,11 +53,12 @@
 .additionally::before {
   content: "";
   position: absolute;
-  top: 43px;
+  top: 44px;
   left: 0;
   width: 100%;
   height: 3px;
   background-color: @bg-green;
+  z-index: -5;
 
   @media (min-width: @tablet-width) {
     top: 89px;
@@ -62,7 +70,7 @@
   height: 300px;
   outline: 1px solid black;
   margin: 0 auto;
-  margin-top: 83px;
+  margin-top: 34px;
   display: flex;
   flex-direction: column;
 
@@ -171,7 +179,10 @@
 }
 .additionally small {
   text-align: center;
-  margin-top: 14px;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
