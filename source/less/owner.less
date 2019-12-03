@@ -9,7 +9,7 @@
     min-height: 300px;
   }
   @media (min-width: @desktop-width) {
-    height: 235px;
+    min-height: 232px;
     padding: 0;
   }
 }
@@ -38,8 +38,10 @@
   }
   @media (min-width: @desktop-width) {
     padding-left: 0px;
-    top: 69px;
-    left: -2px;
+    margin-top: 69px;
+    margin-left: -2px;
+    max-width: 552px;
+    padding-right: 39px;
   }
 }
 .owner::before {
@@ -65,7 +67,7 @@
   padding: 0;
   width: 280px;
   min-height: 102px;
-  outline: 1px solid red;
+  outline: 3px solid red;
   margin: 0 auto;
   margin-top: 33px;
 
@@ -79,9 +81,9 @@
     min-height: 124px;
   }
   @media (min-width: @desktop-width) {
-    margin-top: 179px;
+    margin-top: 75px;
     width: 1220px;
-    height: 50px;
+    min-height: 50px;
   }
 }
 
@@ -124,6 +126,9 @@
     padding-left: 20px;
     font-size: 20px;
     line-height: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0px;
   }
 }
 
