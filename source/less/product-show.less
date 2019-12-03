@@ -24,13 +24,41 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 170px;
+    margin-top: 83px;
+    margin-left: 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 82px;
+    margin-left: 36px;
+  }
 }
 .product-show p {
   margin: 0;
   padding: 0;
   margin-top: 7px;
   margin-bottom: 22px;
+  font-family: "Arial";
   text-align: center;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    width: 140px;
+    margin-top: 26px;
+    margin-left: 74px;
+    outline: 1px solid red;
+    margin-bottom: 90px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

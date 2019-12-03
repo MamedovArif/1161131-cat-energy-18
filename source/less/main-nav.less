@@ -80,8 +80,13 @@
     margin-top: 49px;
   }
 }
-
-  @media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
+   .main-nav__link--active {
+    border-bottom: 2px solid @bg-green;
+    padding-bottom: 7px;
+  }
+}
+@media (min-width: @desktop-width) {
   .main-nav__item a {
     font-size: 20px;
     line-height: 25px;

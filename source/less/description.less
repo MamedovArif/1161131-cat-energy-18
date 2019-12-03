@@ -12,6 +12,11 @@
   background-position: 0 0;
   outline: 1px solid red;
 
+  @media (max-width: @mobile-width-only) and (min-resolution: @retina-dppx) {
+    background-size: contain;
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: none;
     width: 710px;
@@ -38,6 +43,12 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   z-index: 10;
+  outline: 1px solid red;
+
+  @media (max-width: @mobile-width-only) and (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png");
+    background-size: 280px auto;
+  }
 
   @media (min-width: @tablet-width) {
     top: 232px;
@@ -48,6 +59,11 @@
 
     background-image: url("../img/index-can-tablet@1x.jpg");
     z-index: -1;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
   @media (min-width: @desktop-width) {
     top: 18px;
@@ -58,6 +74,11 @@
     z-index: -5;
 
     background-image: url("../img/index-can-desktop@1x.png");
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: 552px auto;
+    }
   }
 }
 @media (min-width: @desktop-width) {
@@ -72,6 +93,11 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-color: @bg-green;
     z-index: -10;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: auto 696px;
+    }
   }
 }
 
@@ -104,6 +130,7 @@
 .description__paragraph {
   font-size: 14px;
   line-height: 14px;
+  font-weight: normal;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -133,9 +160,12 @@
   vertical-align: top;
 
   text-align: center;
-  padding: 11px 73px;
-  margin: 0 auto;
-  margin-top: 303px;
+  padding: 9px 73px 11px 73px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-top: 290px;
+  background-color: @bg-green;
+  color: #ffffff;
 
   @media (min-width: @tablet-width) {
     margin: 0;

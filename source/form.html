@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,20 +10,24 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
+      <a class="page-header__logo">
+       <picture>
+        <source media="(min-width: 1220px)" srcset="../img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+        <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
+       </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a href="index.html" class="main-nav__link">Главная</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
+            <a href="form.html" class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -36,64 +40,77 @@
       <form method="get" action="https://echo.htmlacademy.ru">
     <div class="form-page__first-container">
       <fieldset class="cat">
+    <div class="cat__wrapper">
       <label class="cat__nickname" for="nickname">Имя:<sup>*</sup></label>
       <input class="cat__nickname-input" name="nickname" type="text" id="nickname" placeholder="Барсик">
       <label class="cat__weight" for="weight">Вес (кг):<sup>*</sup></label>
       <input class="cat__weight-input" name="nickname" type="text" id="weight" placeholder="7">
       <label class="cat__age" for="age">Возраст (лет):</label>
       <input class="cat__age-input" name="nickname" type="text" id="age" placeholder="7">
+    </div>
       </fieldset>
       <fieldset class="form-programs">
       <div class="form-programs__wrapper">
-        <input class="form-programs__input" name="programs" type="radio" id="slim" checked>
+        <input class="form-programs__input visually-hidden" name="programs" type="radio" id="slim" checked>
         <label class="form-programs__label" for="slim">похудение</label>
-        <input class="form-programs__input" name="programs" type="radio" id="mass-set">
+        <input class="form-programs__input visually-hidden" name="programs" type="radio" id="mass-set">
         <label class="form-programs__label" for="mass-set">набор массы</label>
-        <input class="form-programs__input" name="programs" type="radio" id="advice">
+        <input class="form-programs__input visually-hidden" name="programs" type="radio" id="advice">
         <label class="form-programs__label" for="advice">не знаю (нужен ваш совет)</label>
       </div>
       </fieldset>
     </div>
       <fieldset class="owner">
-        <legend>Контактные данные (владельца кота)</legend>
+      <div class="owner__wrapper">
+        <legend class="owner__legend">Контактные данные (владельца кота)</legend>
         <div class="owner__container">
         <label class="owner__email" for="email">e-mail:<sup>*</sup></label>
         <input class="owner__email-input" id="email" name="email" type="email" placeholder="Kuklachev@gmail.com">
         <label class="owner__tel" for="tel">телефон:<sup>*</sup></label>
         <input class="owner__tel-input" id="tel" name="tel" type="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
       </div>
+    </div>
       </fieldset>
       <fieldset class="comment">
+      <div class="comment__wrapper">
       <legend class="comment__legend">Комментарий</legend>
     <div class="comment__container">
       <textarea class="comment__texterea" rows="5" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
     </div>
+    </div>
       </fieldset>
       <fieldset class="additionally">
+      <div class="additionally__wrapper">
         <legend class="additionally__legend">Дополнительно</legend>
       <div class="additionally__container">
-        <input class="additionally__substitute-input" name="substitute" type="checkbox" id="substitute" checked>
+        <input class="additionally__substitute-input visually-hidden" name="substitute" type="checkbox" id="substitute" checked>
         <label class="additionally__substitute" for="substitute">сахарозаменитель</label>
-        <input class="additionally__water-input" name="water" type="checkbox" id="water">
+        <input class="additionally__water-input visually-hidden" name="water" type="checkbox" id="water">
         <label class="additionally__water" for="water">питьевая вода</label>
-        <input class="additionally__milk-input" name="milk" type="checkbox" id="milk">
+        <input class="additionally__milk-input visually-hidden" name="milk" type="checkbox" id="milk">
         <label class="additionally__milk" for="milk">молоко</label>
-        <input class="additionally__vitamins-input" name="vitamins" type="checkbox" id="vitamins">
+        <input class="additionally__vitamins-input visually-hidden" name="vitamins" type="checkbox" id="vitamins">
         <label class="additionally__vitamins" for="vitamins">витамины</label>
         <button class="additionally__button button">Отправить заявку</button>
-        <small><sup>*</sup>&mdash;Обязательные поля</small>
+        <small><sup>*</sup> &mdash; Обязательные поля</small>
       </div>
+    </div>
       </fieldset>
      </form>
     </main>
-<footer class="page-footer">
+    <footer class="page-footer">
     <div class="page-footer__data">
-      <p class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="page-footer__invitation">Приглашаем<br> к сотрудничеству дилеров!</p>
       <p class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
       <a class="page-footer__map">
-        <img class="page-footer__map-image" src="../img/time.png" width="318" height="361" alt="карта">
+      <picture>
+        <source media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img class="page-footer__map-image" src="../img/time.png" srcset="../img/time2.png 2x" width="318" height="361" alt="наш адресс">
+      </picture>
       </a>
+    <div class="page-footer__low">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="../img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
       </a>
@@ -113,6 +130,7 @@
       <div class="page-footer__copyright">
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
+    </div>
     </footer>
 
     <script src="js/nav-toggle.js"></script>
