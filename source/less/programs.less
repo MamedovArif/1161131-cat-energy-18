@@ -66,16 +66,12 @@
     left: 52px;
   }
 }
-.programs__item--slim::after {
+.programs__icon-slim {
   position: absolute;
   top: -2px;
   left: 12px;
-  content: "";
   width: 70px;
   height: 97px;
-  background-image: url("../img/icon-cat-slim.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   transform: scale(0.5);
 
   @media (min-width: @tablet-width) {
@@ -89,17 +85,14 @@
     left: 65px;
   }
 }
-.programs__item--weight::after {
+.programs__icon-pro {
   position: absolute;
   top: 22px;
   left: -20px;
-  content: "";
   width: 134px;
   height: 56px;
-  background-image: url("../img/icon-cat-pro.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   transform: scale(0.5);
+  fill: tomato;
 
   @media (min-width: @tablet-width) {
     transform: scale(2);
@@ -191,40 +184,53 @@
     margin-top: 33px;
   }
 }
-.programs__link::before {
-  content: "";
+.programs__link-right {
   width: 25px;
   height: 11px;
   position: absolute;
   top: 4px;
   left: 96px;
-  background-image: url("../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 
   @media (min-width: @tablet-width) {
     top: 6px;
     left: 132px;
   }
 }
+.programs__link:hover .programs__link-right {
+  display: none;
+}
+.programs__link-long-right {
+  display: none;
+  width: 32px;
+  height: 11px;
+  position: absolute;
+  top: 4px;
+  left: 96px;
 
-
+  @media (min-width: @tablet-width) {
+    top: 6px;
+    left: 132px;
+  }
+}
+.programs__link:hover .programs__link-long-right {
+  display: block;
+}
 
 @media (min-width: @desktop-width) {
   .programs {
-  min-height: 370px;
-            &__list {
-              width: 1220px;
-              flex-direction: row;
-              justify-content: space-between;
-            }
-            &__item {
-              width: 570px;
-              height: 370px;
-            }
-            &__item:first-child {
-            margin-right: auto;
-            margin-bottom: 0px;
-            }
+    min-height: 370px;
+    &__list {
+      width: 1220px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__item {
+      width: 570px;
+      height: 370px;
+    }
+    &__item:first-child {
+      margin-right: auto;
+      margin-bottom: 0px;
+    }
   }
 }
