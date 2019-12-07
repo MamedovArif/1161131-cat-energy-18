@@ -30,7 +30,7 @@
   }
 }
 
-.description::before {
+.description__feedstuff {
   content: "";
   position: absolute;
   top: 168px;
@@ -39,14 +39,10 @@
   width: 280px;
   height: 271px;
 
-  background-image: url("../img/index-can-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   z-index: 10;
   outline: 1px solid red;
 
   @media (max-width: @mobile-width-only) and (min-resolution: @retina-dppx) {
-    background-image: url("../img/index-can-mobile@2x.png");
     background-size: 280px auto;
   }
 
@@ -57,11 +53,9 @@
     height: 609px;
     outline: 1px solid red;
 
-    background-image: url("../img/index-can-tablet@1x.jpg");
     z-index: -1;
 
     @media (min-resolution: @retina-dppx) {
-      background-image: url("../img/index-can-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -73,10 +67,7 @@
     outline: 1px solid blue;
     z-index: -5;
 
-    background-image: url("../img/index-can-desktop@1x.png");
-
     @media (min-resolution: @retina-dppx) {
-      background-image: url("../img/index-can-desktop@2x.png");
       background-size: 552px auto;
     }
   }
