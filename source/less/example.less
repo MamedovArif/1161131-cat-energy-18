@@ -1,22 +1,30 @@
 .example {
   background-color: #f2f2f2;
+  background-color: transparent;
   outline: 1px solid red;
-  padding: 10px 20px;
-  box-sizing: border-box;
   min-height: 705px;
+  padding-top: 0;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     min-height: 1080px;
-    padding: 36px 30px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 665px;
-    padding: 59px 0;
   }
 }
 .example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 17px;
+  outline: 1px solid blue;
+  @media (min-width: @tablet-width) {
+    margin-top: 43px;
+    width: 100%;
+  }
   @media (min-width: @desktop-width) {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -34,6 +42,10 @@
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 30px;
+    box-sizing: border-box;
   }
   @media (min-width: @desktop-width) {
     width: 100%;
@@ -64,7 +76,9 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 62px;
-    width: 500px;
+    width: 88%;
+    margin-left: 4%;
+
   }
   @media (min-width: @desktop-width) {
     width: 400px;
@@ -73,8 +87,9 @@
 }
 
 .example__preface {
+  outline: 3px solid red;
   @media (min-width: @tablet-width) {
-    outline: 1px solid red;
+
     display: flex;
     justify-content: space-between;
   }
@@ -100,7 +115,7 @@
 .example__indicators p {
   margin: 0;
   padding: 0;
-  margin-top: 27px;
+  margin-top: 26px;
 }
 .example__indicators b {
   font-size: 24px;
@@ -152,7 +167,7 @@
 .example__cost {
   font-size: 14px;
   line-height: 20px;
-  margin-top: 15px;
+  margin-top: 13px;
   font-weight: bold;
   letter-spacing: -0.3px;
   text-transform: uppercase;
@@ -178,6 +193,11 @@
   display: flex;
   margin-top: 40px;
   outline: 1px solid red;
+}
+.example__desktop-grid2 {
+  @media (min-width: @tablet-width) {
+    outline: 1px solid green;
+  }
 }
 
 
