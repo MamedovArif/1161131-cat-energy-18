@@ -47,13 +47,13 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin)
+    .pipe(htmlmin())
     .pipe(gulp.dest("build"));
 });
 
 gulp.task("js", function () {
   return gulp.src("source/*.js")
-    .pipe(jsmin)
+    .pipe(jsmin())
     .pipe(gulp.dest("build"));
 })
 
