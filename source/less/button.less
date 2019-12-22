@@ -1,34 +1,29 @@
 .button {
   display: block;
-  width: 280px;
-  height: 40px;
-  background-color: #68b738;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+
   font-weight: normal;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-sizing: border-box;
   text-align: center;
-
-  border: none;
   color: #ffffff;
+
+  background-color: @bg-green;
+  border: none;
   text-decoration: none;
+
   outline: 1px solid red;
 }
-@media (min-width: @tablet-width) {
-  .button {
-  width: 250px;
-  }
+
+.button:hover {
+  background-color: #5eaa2f;
 }
-@media (min-width: @desktop-width) {
-  .button {
-  width: 170px;
-  }
+
+.button:active,
+.button:focus {
+  color: #78b850;
+  background-color: #5eaa2f;
 }
+
 .button--gray {
   background-color: gray;
   color: #000000;
