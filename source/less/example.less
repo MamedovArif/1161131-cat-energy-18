@@ -14,11 +14,45 @@
     min-height: 665px;
   }
 }
+
+.example__container-title {
+  width: 320px;
+  margin: 0 auto;
+  outline: 1px solid black;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+}
+.example__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  margin-top: 16px;
+  margin-left: 20px;
+  color: green;
+  outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    margin: 0;
+    margin-top: 42px;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
 .example__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
   margin-top: 17px;
   outline: 1px solid blue;
+
   @media (min-width: @tablet-width) {
     margin-top: 43px;
     width: 100%;
@@ -30,38 +64,29 @@
     justify-content: space-between;
   }
 }
-.example__title {
-  margin: 0;
-  padding: 0;
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: normal;
-  margin-top: 6px;
-  color: green;
+
+.example__desktop-grid1 {
+  margin: 0 20px;
   outline: 1px solid red;
 
   @media (min-width: @tablet-width) {
-    font-size: 60px;
-    width: 768px;
-    margin: 0 auto;
-    padding-left: 30px;
-    box-sizing: border-box;
+    margin: 0;
   }
   @media (min-width: @desktop-width) {
-    width: 100%;
-  }
-}
-@media (min-width: @desktop-width) {
-  .example__desktop-grid1 {
     width: 450px;
+
     outline: 1px solid blue;
     margin-top: 75px;
   }
-  .example__desktop-grid2 {
+}
+
+.example__desktop-grid2 {
+  @media (min-width: @desktop-width) {
     width: 450px;
     outline: 1px solid blue;
   }
 }
+
 .example__history {
   margin: 0;
   padding: 0;
@@ -150,7 +175,7 @@
   min-height: 30px;
   margin-top: -8px;
   margin-left: 18px;
-  padding-left: 13px;
+  padding-left: 5px;
   box-sizing: border-box;
   text-align: center;
   z-index: 5;
@@ -161,9 +186,15 @@
     font-size: 14px;
     line-height: 14px;
     width: 124px;
-    padding: 0 9px;
-    box-sizing: border-box;
+    margin: -8px auto 0 auto;
+    padding-left: 0;
   }
+}
+.example__second-small small {
+  @media (min-width: @tablet-width) {
+    width: 142px;
+  }
+
 }
 .example__cost {
   font-size: 14px;
@@ -174,7 +205,7 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
-  outline: 1px solid green;
+  outline: 4px solid green;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -191,6 +222,11 @@
     margin-top: 37px;
   }
 }
+.example__cost br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
 
 .example__desktop-grid2 {
   outline: 1px solid green;
@@ -201,7 +237,8 @@
     width: 100%;
     min-height: 462px;
     margin-top: 235px;
-    background-color: tomato;
+    background-color: #f2f2f2;
+    background-color: transparent;
   }
 }
 .example__images picture {
@@ -211,12 +248,20 @@
   }
 }
 .example__toggles {
-  display: block;
+  display: flex;
 
   margin-top: 25px;
   margin-bottom: 30px;
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
+
+    margin: 0 auto;
+    margin-top: 25px;
+  }
 }
+
 
 
 

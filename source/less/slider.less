@@ -1,7 +1,7 @@
 .slider__slide1 {
   outline: 1px solid red;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 23px;
   width: 320px;
   height: 240px;
 
@@ -12,6 +12,9 @@
     width: 690px;
     height: 517px;
   }
+}
+.slider__toggles {
+  position: relative;
 }
 .slider__toggle {
   font-size: 16px;
@@ -25,20 +28,28 @@
 .slider__toggle--btn1 {
   letter-spacing: -0.4px;
   color: green;
-  margin-left: 37px;
-  margin-right: 107px;
+
+  margin-left: 57px;
+  margin-right: 12px;
   position: relative;
 }
-.slider__toggle--btn1::after {
-  content: "";
-  position: absolute;
+.slider__out-scale {
   display: block;
-  top: 4px;
-  left: 61px;
   width: 84px;
   height: 13px;
+  margin-top: 3px;
+  margin-right: 10px;
   border: 1px solid #cdcdcd;
   border: 1px solid red;
   background-color: #ffffff;
   border-radius: 8px;
+}
+.slider__into-scale {
+  display: block;
+  width: 35px;
+  height: 6px;
+  margin-top: 3px;
+  margin-left: 4px;
+  border-radius: 6px;
+  background-color: #000000;
 }
