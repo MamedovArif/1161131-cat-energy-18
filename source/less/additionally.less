@@ -137,7 +137,7 @@
   left: -45px;
   width: 28px;
   height: 29px;
-  border: 1px solid red;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
     width: 39px;
@@ -146,6 +146,16 @@
     left: -59px;
   }
 }
+
+.additionally label:hover::before {
+  border-color: #bababa;
+}
+
+.additionally label:active,
+.additionally label:focus {
+  opacity: 0.5;
+}
+
 .additionally input:checked + label::after {
   content: "";
   position: absolute;
@@ -154,8 +164,8 @@
   width: 18px;
   height: 10px;
   background-color: transparent;
-  border-bottom: 2px solid red;
-  border-left: 2px solid red;
+  border-bottom: 2px solid @bg-green;
+  border-left: 2px solid @bg-green;
   transform: rotate(-45deg);
 
   @media (min-width: @tablet-width) {

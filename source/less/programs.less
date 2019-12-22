@@ -32,7 +32,6 @@
   width: 280px;
   height: 265px;
   background-color: @bg-gray;
-  opacity: 0.5;
   padding: 20px;
   box-sizing: border-box;
   outline: 1px solid red;
@@ -231,4 +230,9 @@
 }
 .programs__link:hover .programs__link-long-right {
   display: block;
+}
+
+.programs__link:active,
+.programs__link:focus {
+  opacity: 0.5;
 }
