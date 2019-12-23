@@ -1,5 +1,6 @@
 .product {
-  height: 209px;
+  min-height: 209px;
+  width: 320px;
   outline: 1px solid black;
   position: relative;
   display: flex;
@@ -7,7 +8,7 @@
 }
 @media (min-width: @tablet-width) {
   .product {
-    width: 323px;
+    width: 325px;
     height: 429px;
     margin-bottom: 142px;
     position: relative;
@@ -30,10 +31,11 @@
   outline: 1px solid red;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 324px;
+    left: 0;
   }
   @media (min-width: @desktop-width) {
     width: 245px;
@@ -105,7 +107,7 @@
   margin: 0;
   padding: 0;
   margin-top: 22px;
-  margin-left: 140px;
+  margin-left: 160px;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
@@ -131,27 +133,35 @@
   font-size: 12px;
   line-height: 16px;
   font-family: "Arial";
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
   padding: 0;
-  margin-top: 9px;
-  margin-bottom: 13px;
-  margin-left: 140px;
+  margin-top: 11px;
+  margin-bottom: 19px;
+  margin-left: 159px;
+  margin-right: 18px;
+  border-collapse: collapse;
 
   outline: 1px solid red;
   color: blue;
 
   @media (min-width: @tablet-width) {
-    margin-top: 27px;
-    margin-right: 32px;
-    margin-bottom: 37px;
-    margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 35px;
+    margin-bottom: 30px;
+    margin-left: 37px;
     font-size: 16px;
     font-family: 16px;
   }
 }
+
 .product__table td {
   outline: 1px solid red;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 .product__table .product__field {
   text-align: right;
@@ -159,4 +169,12 @@
 .product__link {
   display: block;
   margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  width: 280px;
+  @media (min-width: @desktop-width) {
+    width: 168px;
+    height: 41px;
+  }
 }

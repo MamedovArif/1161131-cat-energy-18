@@ -1,4 +1,6 @@
 .page-footer {
+  position: relative;
+
   outline: 1px solid red;
   width: 100%;
   margin: 0 auto;
@@ -275,4 +277,21 @@
 .page-footer__copyright-link:active,
 .page-footer__copyright-link:focus {
   opacity: 0.5;
+}
+.page-footer iframe {
+  position: absolute;
+  top: 112px;
+  width: 100%;
+  z-index: 40;
+
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+    top: 198px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+  }
+
 }
