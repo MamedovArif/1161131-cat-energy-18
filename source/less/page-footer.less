@@ -14,7 +14,7 @@
 }
 @media (min-width: @desktop-width) {
   .page-footer {
-  width: 1220px;
+  width: 1300px;
   min-height: 550px;
   position: relative;
   padding: 0;
@@ -39,14 +39,12 @@
 }
 @media (min-width: @desktop-width) {
   .page-footer__data {
-
-  position: absolute;
-  top: 93px;
-  left: -70px;
-  width: 570px;
-  height: 200px;
-  opacity: 1;
-
+    position: absolute;
+    top: 93px;
+    left: 40px;
+    width: 570px;
+    height: 200px;
+    opacity: 1;
   }
 }
 .page-footer__invitation {
@@ -66,7 +64,10 @@
     width: 157px;
   }
   @media (min-width: @desktop-width) {
-    width: 285px;
+    width: 230px;
+    padding-top: 65px;
+    padding-left: 75px;
+    box-sizing: border-box;
   }
 }
 .page-footer__address {
@@ -85,7 +86,11 @@
     text-align: right;
   }
   @media (min-width: @desktop-width) {
-    width: 250px;
+    width: 245px;
+    padding-top: 65px;
+    padding-right: 90px;
+    box-sizing: border-box;
+    text-align: left;
   }
 }
 .page-footer__address p {
@@ -109,7 +114,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1300px;
     height: 400px;
   }
 }
@@ -122,7 +127,7 @@
 
   }
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1300px;
     height: 400px;
   }
 }
@@ -144,6 +149,11 @@
       top: 150px;
       left: 317px;
     }
+
+    @media (min-width: @desktop-width) {
+      top: 150px;
+      left: 925px;
+    }
 }
 .page-footer__low {
   outline: 2px solid green;
@@ -154,7 +164,7 @@
 .page-footer__low-container {
   display: flex;
   flex-direction: column;
-  padding-top: 36px;
+  padding-top: 40px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -168,6 +178,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 1300px;
     justify-content: space-between;
   }
 }
@@ -186,7 +197,8 @@
     margin-right: 150px;
   }
   @media (min-width: @desktop-width) {
-    margin-left: 0;
+    margin-left: 41px;
+    margin-right: 405px;
   }
 }
 .page-footer__logo-image {
@@ -219,7 +231,9 @@
     margin-right: 78px;
   }
   @media (min-width: @desktop-width) {
-    margin-right: 61px;
+    margin-top: 6px;
+    margin-right: 90px;
+    margin-left: 380px;
   }
 }
 .page-footer__copyright-icon {
@@ -251,6 +265,7 @@
     padding: 0;
     margin: 0;
   }
+
 }
 
 .page-footer__copyright-link:hover .page-footer__copyright-icon {
