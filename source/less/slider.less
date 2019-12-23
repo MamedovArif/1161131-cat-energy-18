@@ -12,6 +12,9 @@
     width: 690px;
     height: 517px;
   }
+  @media (min-width: @desktop-width) {
+    margin-top: -185px;
+  }
 }
 .slider__toggle {
   font-size: 16px;
@@ -25,6 +28,11 @@
   @media (min-width: @tablet-width) {
     font-weight: normal;
     font-size: 20px;
+    outline: 1px solid red;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #bebebe;
   }
 }
 .slider__toggle--btn1 {
@@ -35,11 +43,13 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-  margin-left: 9px;
-  margin-right: 18px;
+  margin-left: 16px;
+  margin-right: 21px;
   }
 }
 .slider__out-scale {
+  position: relative;
+
   display: block;
   width: 84px;
   height: 13px;
@@ -54,14 +64,13 @@
     width: 428px;
     height: 6px;
     margin-top: 7px;
-    margin-right: 13px;
+    margin-right: 21px;
     background-color: #dcdcdc;
   }
 }
 
 .slider__into-scale {
-  position: relative;
-
+  border: none;
   display: block;
   width: 35px;
   height: 6px;
@@ -71,6 +80,7 @@
   background-color: #000000;
 
   @media (min-width: @tablet-width) {
+    display: inline-block;
     width: 8px;
     height: 8px;
     margin-top: -13px;
@@ -88,7 +98,7 @@
     box-shadow: 0 3px 4px 3px #cecece;
   }
 }
-.slider__into-scale:hover .slider__into-scale::before {
+.slider__into-scale:hover .slider__out-scale::before {
   @media (min-width: @tablet-width) {
     position: absolute;
     content: "";
@@ -98,6 +108,6 @@
     height: 33px;
     border-radius: 50%;
     border: 2px solid @bg-green;
-
   }
 }
+
