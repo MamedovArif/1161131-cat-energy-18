@@ -6,6 +6,7 @@
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
   min-height: 157px;
+  outline: 1px solid red;
 
   margin: 0 auto;
   height: 157px;
@@ -29,15 +30,19 @@
 
   margin-top: 23px;
   margin-bottom: 2px;
-  margin-left: 68px;
+  margin-left: 66px;
   position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 28px;
-    margin-bottom: 5px;
-    margin-left: 76px;
+    margin-top: 34px;
+    margin-bottom: 0px;
+    margin-left: 88px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 32px;
+    margin-left: 87px;
   }
 }
 .form-programs__label::before {

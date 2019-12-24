@@ -20,11 +20,12 @@
     width: 710px;
     margin-top: 65px;
     height: 195px;
-    margin-top: 0;
+    padding: 0;
   }
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-left: 0;
+
   }
 }
 
@@ -42,6 +43,7 @@
   padding-left: 12px;
   box-sizing: border-box;
   flex-grow: 1;
+  border: 1px solid #e6e6e6;
 
   outline: none;
 
@@ -56,7 +58,11 @@
     min-width: 432px;
   }
 }
-.cat input:active {
+.cat input:hover {
+  border-color: #cdcdcd;
+}
+.cat input:active,
+.cat input:focus {
   border: 2px solid #444444;
 }
 .cat label {
@@ -70,10 +76,11 @@
   margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 11px;
     margin-left: 40px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
   @media (min-width: @desktop-width) {
     margin-top: 10px;

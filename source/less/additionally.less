@@ -21,18 +21,26 @@
   flex-direction: column;
   align-item: flex-start;
 }
-.additionally__legend {
+.additionally__title-container {
+  width: 320px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  margin-top: 27px;
+}
+.additionally__title {
   font-size: 24px;
   line-height: 24px;
   background-color: #ffffff;
 
   outline: 1px solid red;
   max-width: 184px;
-  margin-top: 31px;
+
   margin-left: 0px;
+  font-weight: normal;
   padding-right: 0px;
-  padding-left: 16px;
+  padding-left: 18px;
   box-sizing: border-box;
+  background-color: transparent;
 
 
   @media (min-width: @tablet-width) {
@@ -54,7 +62,7 @@
 .additionally::before {
   content: "";
   position: absolute;
-  top: 44px;
+  top: 40px;
   left: 0;
   width: 100%;
   height: 3px;
@@ -174,7 +182,12 @@
   }
 }
 .additionally__button {
-  margin-top: 22px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
 
   @media (min-width: @tablet-width) {
     margin-left: 38px;

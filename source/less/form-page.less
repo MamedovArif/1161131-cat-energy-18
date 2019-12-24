@@ -38,7 +38,7 @@
     }
 }
 
-.form-page p {
+.form-page__start p {
   margin: 0;
   padding: 0;
   margin-top: 25px;
@@ -63,9 +63,13 @@
     margin-left: 0;
   }
 }
-
-@media (min-width: @desktop-width) {
-  .form-page__first-container {
+.form-page form {
+  display: flex;
+  flex-direction: column;
+}
+.form-page__first-container {
+  outline: 1px solid red;
+  @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 1220px;
