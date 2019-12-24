@@ -2,16 +2,25 @@
   margin: 0;
   padding: 0;
   border: none;
-  outline: 1px solid blue;
+
   width: 320px;
   min-height: 190px;
   margin: 0 auto;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  outline: 1px solid red;
+  margin-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 710px;
     margin-top: 65px;
     height: 195px;
+    margin-top: 0;
   }
   @media (min-width: @desktop-width) {
     width: 570px;
@@ -19,27 +28,13 @@
   }
 }
 
-.cat__wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  outline: 1px solid red;
-  margin-top: 39px;
-  margin-bottom: 14px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 0;
-  }
-}
-
-.cat__wrapper input {
+.cat input {
   margin: 0;
   padding: 0;
   height: 45px;
 
-  outline: 1px solid red;
   margin-left: 16px;
-  min-width: 172px;
+  min-width: 170px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -47,6 +42,8 @@
   padding-left: 12px;
   box-sizing: border-box;
   flex-grow: 1;
+
+  outline: none;
 
   @media (min-width: @tablet-width) {
     min-width: 500px;
@@ -59,14 +56,18 @@
     min-width: 432px;
   }
 }
-.cat__wrapper label {
+.cat input:active {
+  border: 2px solid #444444;
+}
+.cat label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 12px;
-  margin-left: 19px;
+  margin-top: 10px;
+  align-self: flex-start;
+
   outline: 1px solid red;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     margin-left: 40px;
