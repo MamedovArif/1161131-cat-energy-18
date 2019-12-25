@@ -25,16 +25,24 @@
   border: none;
   background-color: transparent;
 
+  cursor: pointer;
+
   @media (min-width: @tablet-width) {
     font-weight: normal;
     font-size: 20px;
-    outline: 1px solid red;
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 5px;
     border-bottom: 1px dotted #bebebe;
   }
-
+}
+.slider__toggle:hover {
+  border-bottom: 1px solid #989898;
+}
+.slider__toggle:active,
+.slider__toggle:focus {
+  border: none;
+  outline: none;
 }
 .slider__toggle--btn1 {
   letter-spacing: -0.4px;
@@ -78,13 +86,14 @@
   margin-top: 3px;
   margin-left: 4px;
   border-radius: 6px;
-  background-color: #000000;
+  background-color: @bg-green;
 
   @media (min-width: @tablet-width) {
+    display: inline-block;
     width: 8px;
-    height: 8px;
-    margin-top: -13px;
-    margin-left: 6.5%;
+    height: 33px;
+    margin-top: 33px;
+    margin-left: 46.7%;
     border: 12px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 4px 2px #cecece;
@@ -98,16 +107,21 @@
     box-shadow: 0 3px 4px 3px #cecece;
   }
 }
-.slider__into-scale:hover .slider__out-scale::before {
+.slider__out-scale::before {
   @media (min-width: @tablet-width) {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    top: -15px;
+    left: 197px;
     width: 33px;
     height: 33px;
     border-radius: 50%;
     border: 2px solid @bg-green;
   }
 }
+.slider__into-scale:hover .slider__out-scale::before,
+.slider__into-scale:hover .slider__out-scale::before {
+  border: 2px solid tomato;
+}
+
 
