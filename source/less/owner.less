@@ -78,11 +78,11 @@
 .owner__container {
   margin: 0;
   padding: 0;
-  width: 282px;
+  width: 283px;
   min-height: 102px;
-  outline: 1px solid red;
+
   margin: 0 auto;
-  margin-top: 33px;
+  margin-top: 31px;
 
   display: flex;
   flex-direction: row;
@@ -104,7 +104,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 5px;
+  margin-top: 6px;
   margin-right: 10px;
   outline: 1px solid tomato;
   position: relative;
@@ -130,16 +130,16 @@
 .owner__input-wrapper {
   display: flex;
   justify-content: space-between;
-  min-width: 100px;
+  min-width: 90px;
   flex-grow: 1;
-  height: 45px;
-  outline: 1px solid blue;
-  margin-bottom: 14px;
+  height: 43px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     height: 51px;
-    margin-bottom: 24px;
-    min-width: 530px;
+    margin-bottom: 19px;
+    min-width: 520px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -149,41 +149,54 @@
     max-width: 485px;
   }
 }
+.owner__input-wrapper:hover {
+  border-color: #cdcdcd;
+}
+.owner__input-wrapper:active,
+.owner__input-wrapper:focus-within {
+  box-shadow: 0 0 0 2px #444444;
+}
+.owner__input-wrapper--error {
+  box-shadow: 0 0 0 2px #ff8282;
+}
 .owner__email + .owner__input-wrapper {
   @media (min-width: @desktop-width) {
     width: 485px;
   }
 }
+.owner__input-wrapper input {
+  outline: none;
+}
+
 .owner__input-wrapper p {
   position: relative;
   margin: 0;
   padding: 0;
-  width: 45px;
+  width: 40px;
   height: 100%;
-  outline: 1px solid green;
   background-color: transparent;
 }
 .owner__email-icon {
   margin-top: 14px;
-  margin-left: 10px;
+  margin-left: 6px;
 
   @media (min-width: @tablet-width) {
     margin-top: 20px;
-    margin-left: 9px;
+    margin-left: 4px;
   }
 
 }
 .owner__phone-icon {
   margin-top: 11px;
-  margin-left: 10px;
+  margin-left: 6px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 15px;
-    margin-left: 9px;
+    margin-top: 16px;
+    margin-left: 5px;
   }
   @media (min-width: @desktop-width) {
     margin-top: 17px;
-    margin-left: 6px;
+    margin-left: 3px;
   }
 }
 .owner__container input {
@@ -195,10 +208,14 @@
   line-height: 20px;
   font-family: "Oswald";
   text-transform: uppercase;
-  height: 41px;
-  border: 1px solid green;
+  height: 37px;
+  margin-top: 2px;
+  margin-left: 2px;
+  border: none;
+  min-width: 90px;
   flex-grow: 1;
-  padding-left: 15px;
+  padding-top: 0;
+  padding-left: 17px;
   background-color: transparent;
 
   @media (min-width: @tablet-width) {
@@ -209,5 +226,16 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 0px;
   }
+}
+
+.owner__email-input:active + p,
+.owner__email-input:focus + p,
+.owner__tel-input:active + p,
+.owner__tel-input:focus + p {
+  fill: @bg-green;
+}
+.owner__email-input--error + p,
+.owner__tel-input--error + p {
+  fill: #ff8282;
 }
 

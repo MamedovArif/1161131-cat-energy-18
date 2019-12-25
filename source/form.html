@@ -213,11 +213,11 @@
           <section class="cat">
             <h2 class="visually-hidden">Информация о коте</h2>
             <label class="cat__nickname" for="nickname">Имя:<sup>*</sup></label>
-            <input class="cat__nickname-input" name="nickname" type="text" id="nickname" placeholder="Барсик">
+            <input class="cat__input" name="nickname" type="text" id="nickname" placeholder="Барсик">
             <label class="cat__weight" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="cat__weight-input" name="nickname" type="text" id="weight" placeholder="7">
+            <input class="cat__input" name="nickname" type="text" id="weight" placeholder="7">
             <label class="cat__age" for="age">Возраст (лет):</label>
-            <input class="cat__age-input" name="nickname" type="text" id="age" placeholder="7">
+            <input class="cat__input" name="nickname" type="text" id="age" placeholder="7">
           </section>
           <section class="form-programs">
             <h2 class="visually-hidden">Интересующаяся программа</h2>
@@ -242,8 +242,8 @@
             </div>
             <label class="owner__tel" for="tel">телефон:<sup>*</sup>
             </label>
-            <div class="owner__input-wrapper">
-              <input class="owner__tel-input" id="tel" name="tel" type="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+            <div class="owner__input-wrapper owner__input-wrapper--error">
+              <input class="owner__tel-input owner__tel-input--error" id="tel" name="tel" type="tel" placeholder="8 (960) 900-60-90" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
               <p><svg class="owner__phone-icon" width="20" height="20"><use xlink:href="#icon-phone"></use></svg></p>
             </div>
           </div>
