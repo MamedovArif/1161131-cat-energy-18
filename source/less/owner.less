@@ -20,7 +20,10 @@
 
   @media (min-width: @tablet-width) {
     width: 768px;
+  }
 
+  @media (min-width: @desktop-width) {
+    width: 1300px;
   }
 }
 .owner__title {
@@ -47,10 +50,10 @@
     margin-left: 27px;
   }
   @media (min-width: @desktop-width) {
-    padding-left: 0px;
+    padding-left: 39px;
     margin-top: 69px;
-    margin-left: -2px;
-    max-width: 552px;
+    margin-left: 0px;
+    max-width: 596px;
     padding-right: 39px;
   }
 }
@@ -119,6 +122,11 @@
     align-self: flex-start;
   }
 }
+.owner__container .owner__tel {
+  @media (min-width: @desktop-width) {
+    margin-left: 77px;
+  }
+}
 .owner__input-wrapper {
   display: flex;
   justify-content: space-between;
@@ -129,8 +137,21 @@
   margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    height: 49px;
-    margin-bottom: 25px;
+    height: 51px;
+    margin-bottom: 24px;
+    min-width: 530px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 450px;
+    max-width: 485px;
+  }
+}
+.owner__email + .owner__input-wrapper {
+  @media (min-width: @desktop-width) {
+    width: 485px;
   }
 }
 .owner__input-wrapper p {
@@ -160,10 +181,18 @@
     margin-top: 15px;
     margin-left: 9px;
   }
+  @media (min-width: @desktop-width) {
+    margin-top: 17px;
+    margin-left: 6px;
+  }
 }
 .owner__container input {
-  font-size: 16px;
-  line-height: 18px;
+  @media (max-width: @mobile-width-only) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  font-size: 20px;
+  line-height: 20px;
   font-family: "Oswald";
   text-transform: uppercase;
   height: 41px;
@@ -173,23 +202,12 @@
   background-color: transparent;
 
   @media (min-width: @tablet-width) {
+
     height: 45px;
     margin-bottom: 21px;
-    padding-left: 20px;
-    font-size: 25px;
-    line-height: 20px;
   }
   @media (min-width: @desktop-width) {
     margin-bottom: 0px;
-  }
-}
-
-.owner__email-input {
-  @media (min-width: @desktop-width) {
-    margin-right: 78px;
-    flex-grow: 0;
-    min-width: 485px;
-    outline: 1px solid blue;
   }
 }
 
