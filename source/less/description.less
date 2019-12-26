@@ -9,7 +9,6 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  outline: 1px solid red;
 
   @media (max-width: @mobile-width-only) and (min-resolution: @retina-dppx) {
     background-size: contain;
@@ -23,7 +22,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 1300px;
+    outline: 1px solid red;
     min-height: 650px;
     position: relative;
   }
@@ -32,8 +32,6 @@
   width: 280px;
   height: 271px;
   margin-left: 20px;
-
-  outline: 1px solid red;
 
   @media (max-width: @mobile-width-only) and (min-resolution: @retina-dppx) {
     background-size: 280px auto;
@@ -46,7 +44,6 @@
     left: 0;
     width: 709px;
     height: 609px;
-    outline: 1px solid red;
 
     z-index: -1;
 
@@ -59,7 +56,6 @@
     left: 490px;
     width: 552px;
     height: 499px;
-    outline: 1px solid blue;
     z-index: -5;
 
     @media (min-resolution: @retina-dppx) {
@@ -76,9 +72,9 @@
     left: 649px;
     width: 720px;
     height: 696px;
-    outline: 1px solid black;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-color: @bg-green;
+    background-size: cover;
     z-index: -10;
 
     @media (min-resolution: @retina-dppx) {
@@ -107,7 +103,6 @@
     margin-top: 30px;
     text-align: left;
     margin-left: 88px;
-    outline: 1px solid red;
   }
   @media (min-width: @desktop-width) {
     margin-top: 98px;
@@ -136,7 +131,6 @@
   @media (min-width: @desktop-width) {
     margin-top: 39px;
     margin-left: 119px;
-    outline: 1px solid red;
     z-index: 10;
   }
 }
