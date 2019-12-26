@@ -4,7 +4,6 @@
   width: 320px;
   height: 240px;
 
-
   @media (min-width: @tablet-width) {
     align-self: center;
     margin-top: -168px;
@@ -91,11 +90,12 @@
   background-color: @bg-green;
 
   @media (min-width: @tablet-width) {
-    display: inline-block;
+    position: absolute;
+    top: -13px;
+    left: 45.5%;
+    z-index: 15;
     width: 8px;
-    height: 33px;
-    margin-top: 33px;
-    margin-left: 46.7%;
+    height: 8px;
     border: 12px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 4px 2px #cecece;
@@ -104,26 +104,35 @@
   }
 }
 
-.slider__into-scale:hover {
-  @media (min-width: @tablet-width) {
-    box-shadow: 0 3px 4px 3px #cecece;
+
+.slider__into-button {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
-}
-.slider__out-scale::before {
   @media (min-width: @tablet-width) {
+
     position: absolute;
-    content: "";
-    top: -15px;
-    left: 197px;
-    width: 33px;
-    height: 33px;
+    top: -11px;
+    left: 198px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     border: 2px solid @bg-green;
+    border: 2px solid transparent;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    z-index: 20;
   }
 }
-.slider__into-scale:hover .slider__out-scale::before,
-.slider__into-scale:hover .slider__out-scale::before {
-  border: 2px solid tomato;
+.slider__into-button:hover {
+  @media (min-width: @tablet-width) {
+    box-shadow: 0 1px 3px 1px #cecece;
+  }
 }
+.slider__into-button:active {
+  border: 2px solid @bg-green;
+}
+
 
 
