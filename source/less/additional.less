@@ -37,6 +37,7 @@
   margin-bottom: 33px;
   padding-left: 19px;
   padding-right: 22px;
+  background-color: #ffffff;
 
   font-size: 24px;
   line-height: 24px;
@@ -91,9 +92,12 @@
   @media (min-width: @tablet-width) {
     width: 710px;
     padding: 0;
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
+    border: none;
     width: 895px;
     min-height: 288px;
     margin: 0;
@@ -114,9 +118,7 @@
   position: relative;
   margin: 0 auto;
   margin-top: 40px;
-  outline: 1px solid red;
   display: flex;
-  opacity: 0.5;
 
   @media (max-width: @mobile-width-only) and (min-resolution: @retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -167,7 +169,6 @@
 
 
 .additional__gift p {
-  outline: 1px solid red;
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial";
@@ -181,8 +182,6 @@
     text-align: left;
     margin-top: 72px;
     margin-left: 422px;
-
-    outline: 1px solid red;
   }
   @media (min-width: @desktop-width) {
     text-align: center;
