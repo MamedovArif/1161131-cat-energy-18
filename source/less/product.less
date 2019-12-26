@@ -1,6 +1,7 @@
 .product {
   min-height: 209px;
   width: 320px;
+  margin: 0 auto;
   outline: 1px solid black;
   position: relative;
   display: flex;
@@ -8,8 +9,9 @@
 }
 @media (min-width: @tablet-width) {
   .product {
+    margin: 0;
     width: 325px;
-    height: 429px;
+    min-height: 429px;
     margin-bottom: 142px;
     position: relative;
   }
@@ -20,7 +22,7 @@
 @media (min-width: @desktop-width) {
   .product {
     width: 245px;
-    height: 430px;
+    min-height: 430px;
     margin-bottom: 143px;
   }
   .product:nth-child(n + 5) {

@@ -99,7 +99,7 @@
 
   @media (min-width: @desktop-width) {
     width: 895px;
-    height: 288px;
+    min-height: 288px;
     margin: 0;
     margin-right: 80px;
 
@@ -109,10 +109,12 @@
   margin: 0;
   padding: 0;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
+  background-color: @bg-green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 280px auto;
   position: relative;
   margin: 0 auto;
   margin-top: 40px;
@@ -122,26 +124,26 @@
 
   @media (max-width: @mobile-width-only) and (min-resolution: @retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
-    background-size: cover;
   }
 
   @media (min-width: @tablet-width) {
     width: 708px;
-    height: 200px;
+    min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     margin-top: 70px;
+    background-size: 708px auto;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
-      background-size: cover;
     }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
-    height: 289px;
+    min-height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     margin: 0;
+    background-size: 245px auto;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
@@ -180,17 +182,16 @@
   margin-top: 188px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
     text-align: left;
-    top: -115px;
-    left: 423px;
+    margin-top: 72px;
+    margin-left: 422px;
 
     outline: 1px solid red;
   }
   @media (min-width: @desktop-width) {
     text-align: center;
-    top: 0px;
-    left: 40px;
+    margin: 0 auto;
+    margin-top: 188px;
   }
 }
 
