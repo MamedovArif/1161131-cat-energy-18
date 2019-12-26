@@ -3,24 +3,22 @@
   width: 320px;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  border: 1px solid #ededed;
   min-height: 157px;
-  outline: 1px solid red;
 
   margin: 0 auto;
-  height: 157px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin-top: 73px;
+    margin-top: 56px;
     width: 630px;
-    height: 194px;
+    min-height: 194px;
   }
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-top: 65px;
     margin-right: 0;
+    align-self: flex-start;
   }
 }
 .form-programs__label {
