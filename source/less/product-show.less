@@ -1,17 +1,18 @@
 .product-show {
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
   width: 320px;
   min-height: 208px;
-  outline: 1px solid red;
   padding: 58px 0 25px 0;
   box-sizing: border-box;
   position: relative;
-}
 
-@media (min-width: @tablet-width) {
-  .product-show {
+  @media (min-width: @tablet-width) {
     width: 323px;
     min-height: 429px;
-    outline: 1px solid black;
+    border: 1px solid #e6e6e6;
   }
 }
 

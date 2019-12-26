@@ -1,11 +1,14 @@
 .product {
-  min-height: 209px;
-  width: 320px;
-  margin: 0 auto;
-  outline: 1px solid black;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #ededed;
+  }
+    min-height: 208px;
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
 }
 @media (min-width: @tablet-width) {
   .product {
@@ -14,6 +17,7 @@
     min-height: 429px;
     margin-bottom: 142px;
     position: relative;
+    background-color: #f2f2f2;
   }
   .product:nth-child(7) {
     margin-bottom: 0;
@@ -26,11 +30,10 @@
     margin-bottom: 143px;
   }
   .product:nth-child(n + 5) {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .product__image {
-  outline: 1px solid red;
   position: absolute;
   top: 0;
   left: 20px;
@@ -115,8 +118,6 @@
   font-size: 16px;
   line-height: 20px;
   max-width: 80px;
-  color: green;
-  outline: 1px solid blue;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -139,13 +140,10 @@
   margin: 0;
   padding: 0;
   margin-top: 11px;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   margin-left: 159px;
   margin-right: 18px;
   border-collapse: collapse;
-
-  outline: 1px solid red;
-  color: blue;
 
   @media (min-width: @tablet-width) {
     margin-top: 20px;
@@ -158,15 +156,19 @@
 }
 
 .product__table td {
-  outline: 1px solid red;
+  padding-bottom: 0px;
 
   @media (min-width: @tablet-width) {
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 .product__table .product__field {
   text-align: right;
+  @media (min-width: @desktop-width) {
+    padding-right: 5px;
+  }
 }
 .product__link {
   display: block;
