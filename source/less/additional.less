@@ -1,12 +1,13 @@
 .additional {
   position: relative;
 
-  min-height: 967px;
   width: 100%;
+  min-height: 967px;
 
   @media (min-width: @tablet-width) {
     min-height: 1085px;
   }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
@@ -17,6 +18,7 @@
     min-height: 565px;
   }
 }
+
 .additional__title-wrapper {
   width: 320px;
   margin: 0 auto;
@@ -29,29 +31,32 @@
     width: 1300px;
   }
 }
+
 .additional h2 {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
   margin-top: 28px;
   margin-bottom: 33px;
   padding-left: 19px;
   padding-right: 22px;
-  background-color: #ffffff;
 
+  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 400;
+
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-top: 68px;
+    margin-bottom: 80px;
     padding-left: 37px;
     padding-right: 37px;
 
     font-size: 36px;
     line-height: 36px;
-    margin-top: 68px;
-    margin-bottom: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,6 +64,7 @@
     margin-left: 0;
   }
 }
+
 .additional::before {
   position: absolute;
   content: "";
@@ -67,6 +73,7 @@
 
   width: 100%;
   height: 3px;
+
   background-color: @bg-green;
 
   @media (min-width: @tablet-width) {
@@ -77,10 +84,12 @@
     top: 97px;
   }
 }
+
 .additional__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -92,33 +101,37 @@
   @media (min-width: @tablet-width) {
     width: 710px;
     padding: 0;
+
     border-right: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
   }
 
   @media (min-width: @desktop-width) {
-    border: none;
     width: 895px;
     min-height: 288px;
     margin: 0;
     margin-right: 80px;
 
+    border: none;
   }
 }
+
 .additional__gift {
+  position: relative;
+
   margin: 0;
   padding: 0;
+  display: flex;
   width: 280px;
   min-height: 289px;
-  background-color: @bg-green;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 280px auto;
-  position: relative;
   margin: 0 auto;
   margin-top: 40px;
-  display: flex;
+
+  background-color: @bg-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 280px auto;
 
   @media (max-width: @mobile-width-only) and (min-resolution: @retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -127,8 +140,9 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     min-height: 200px;
-    background-image: url("../img/gift-photo-tablet@1x.jpg");
     margin-top: 70px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: 708px auto;
 
     @media (min-resolution: @retina-dppx) {
@@ -139,13 +153,13 @@
   @media (min-width: @desktop-width) {
     width: 245px;
     min-height: 289px;
-    background-image: url("../img/gift-photo-desktop@1x.jpg");
     margin: 0;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: 245px auto;
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
-
     }
   }
 }
@@ -154,8 +168,10 @@
   position: absolute;
   top: 66px;
   left: 113px;
+
   width: 56px;
   height: 60px;
+
   fill: #ffffff;
 
   @media (min-width: @tablet-width) {
@@ -167,26 +183,28 @@
   }
 }
 
-
 .additional__gift p {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Arial";
-  color: #ffffff;
   width: 165px;
-  text-align: center;
   margin: 0 auto;
   margin-top: 188px;
 
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+
   @media (min-width: @tablet-width) {
-    text-align: left;
     margin-top: 72px;
     margin-left: 422px;
+
+    text-align: left;
   }
+
   @media (min-width: @desktop-width) {
-    text-align: center;
     margin: 0 auto;
     margin-top: 188px;
+
+    text-align: center;
   }
 }
-

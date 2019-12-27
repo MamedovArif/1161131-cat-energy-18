@@ -1,63 +1,73 @@
 .slider__slide1 {
-  margin: 0 auto;
-  margin-top: 23px;
   width: 320px;
   height: 240px;
+  margin: 0 auto;
+  margin-top: 23px;
 
   @media (min-width: @tablet-width) {
-    align-self: center;
-    margin-top: -168px;
     width: 690px;
     height: 517px;
+    margin-top: -168px;
+
+    align-self: center;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: -185px;
   }
 }
+
 .slider__toggle {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  font-family: "Oswald";
-  font-weight: bold;
-  border: none;
-  background-color: transparent;
+  max-width: 45px;
   padding-right: 0;
   padding-left: 0;
 
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+
+  background-color: transparent;
+  border: none;
+
   cursor: pointer;
-  max-width: 45px;
 
   @media (min-width: @tablet-width) {
+    max-width: 55px;
+    padding-bottom: 5px;
+
     font-weight: normal;
     font-size: 20px;
-    max-width: 55px;
 
-
-    padding-bottom: 5px;
     border-bottom: 1px dotted #bebebe;
   }
 }
+
 .slider__toggle:hover {
   border-bottom: 1px solid #989898;
 }
+
 .slider__toggle:active,
 .slider__toggle:focus {
   border: none;
   outline: none;
 }
+
 .slider__toggle--btn1 {
-  letter-spacing: -0.4px;
+  position: relative;
 
   margin-left: 63px;
   margin-right: 16px;
-  position: relative;
+
+  letter-spacing: -0.4px;
 
   @media (min-width: @tablet-width) {
-  margin-left: 16px;
-  margin-right: 21px;
+    margin-left: 16px;
+    margin-right: 21px;
   }
 }
+
 .slider__out-scale {
   position: relative;
 
@@ -66,8 +76,9 @@
   height: 13px;
   margin-top: 3px;
   margin-right: 17px;
-  border: 1px solid #cecece;
+
   background-color: #ffffff;
+  border: 1px solid #cecece;
   border-radius: 8px;
 
   @media (min-width: @tablet-width) {
@@ -75,27 +86,31 @@
     height: 6px;
     margin-top: 7px;
     margin-right: 21px;
+
     background-color: #dcdcdc;
   }
 }
 
 .slider__into-scale {
-  border: none;
   display: block;
   width: 35px;
   height: 6px;
   margin-top: 3px;
   margin-left: 4px;
-  border-radius: 6px;
+
   background-color: @bg-green;
+  border: none;
+  border-radius: 6px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     top: -13px;
     left: 45.5%;
     z-index: 15;
+
     width: 8px;
     height: 8px;
+
     border: 12px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 4px 2px #cecece;
@@ -104,35 +119,32 @@
   }
 }
 
-
 .slider__into-button {
   @media (max-width: @mobile-width-only) {
     display: none;
   }
   @media (min-width: @tablet-width) {
-
     position: absolute;
     top: -11px;
     left: 198px;
+    z-index: 20;
+
     width: 34px;
     height: 34px;
-    border-radius: 50%;
-    border: 2px solid @bg-green;
-    border: 2px solid transparent;
+
     background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 50%;
     outline: none;
-    padding: 0;
-    z-index: 20;
   }
 }
+
 .slider__into-button:hover {
   @media (min-width: @tablet-width) {
     box-shadow: 0 1px 3px 1px #cecece;
   }
 }
+
 .slider__into-button:active {
   border: 2px solid @bg-green;
 }
-
-
-

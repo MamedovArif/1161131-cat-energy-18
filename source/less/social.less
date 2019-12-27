@@ -1,23 +1,28 @@
 .social__list {
+  position: relative;
+
   list-style: none;
   margin: 0;
   padding: 0;
-  margin: 0 auto;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
-  position: relative;
   width: 280px;
   min-height: 64px;
+  margin: 0 auto;
+
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
-    border: none;
     width: 140px;
     min-height: 28px;
+
+    border: none;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 2px;
   }
 }
+
 .social__icon-vk {
   position: absolute;
   top: 27px;
@@ -27,12 +32,12 @@
   height: 12px;
 
   @media (min-width: @tablet-width) {
-    transform: scale(1.4);
     top: 7px;
     left: 9px;
+
+    transform: scale(1.4);
   }
 }
-
 
 .social__icon-insta {
   position: absolute;
@@ -43,11 +48,13 @@
   height: 16px;
 
   @media (min-width: @tablet-width) {
-    transform: scale(1.45);
     top: 6px;
     left: 66px;
+
+    transform: scale(1.45);
   }
 }
+
 .social__icon-fb {
   position: absolute;
   top: 23px;
@@ -57,15 +64,17 @@
   height: 19px;
 
   @media (min-width: @tablet-width) {
-    transform: scale(1.4);
     top: 5px;
     right: 13px;
+
+    transform: scale(1.4);
   }
 }
 
 .social__link:hover {
   fill: @bg-green;
 }
+
 .social__link:focus,
 .social__link:active {
   opacity: 0.5;

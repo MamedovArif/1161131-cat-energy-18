@@ -1,26 +1,29 @@
 .main-catalog {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin: 0 auto;
   padding: 17px 0 0 0;
 }
+
 .main-catalog h1 {
   margin: 0;
   padding: 0;
-  margin: 0 auto;
   width: 320px;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 60px;
+  margin: 0 auto;
   margin-bottom: 27px;
   padding-left: 20px;
   box-sizing: border-box;
 
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 60px;
+
   @media (min-width: @tablet-width) {
-    margin-top: 13px;
     width: 710px;
+    margin-top: 13px;
     padding-left: 0;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -30,23 +33,26 @@
     margin-top: 46px;
   }
 }
+
 .main-catalog__list {
   @media (max-width: @mobile-width-only) {
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
   }
+
   list-style: none;
   margin: 0;
   padding: 0;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin-top: 139px;
-    width: 710px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 710px;
+    margin-top: 139px;
   }
+
   @media (min-width: @desktop-width) {
     width: 1220px;
   }
