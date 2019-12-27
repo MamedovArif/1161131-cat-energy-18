@@ -1,94 +1,99 @@
 .cat {
   margin: 0;
   padding: 0;
-  border: none;
-
-  width: 320px;
-  min-height: 190px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
+  width: 320px;
+  min-height: 190px;
+  margin: 0 auto;
   margin-top: 39px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
 
+  border: none;
+
   @media (min-width: @tablet-width) {
     width: 710px;
-    margin-top: 65px;
     min-height: 195px;
+    margin-top: 65px;
     padding: 0;
   }
+
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-left: 0;
-
   }
 }
 
 .cat input {
+  flex-grow: 1;
   margin: 0;
   padding: 0;
   height: 45px;
-
-  margin-left: 16px;
   min-width: 170px;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  font-family: "Oswald";
+  margin-left: 16px;
   padding-left: 12px;
   box-sizing: border-box;
-  flex-grow: 1;
-  border: 1px solid #e6e6e6;
 
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  border: 1px solid #e6e6e6;
   outline: none;
 
   @media (min-width: @tablet-width) {
     min-width: 500px;
     height: 52px;
     margin-left: 21px;
+
     font-size: 20px;
     line-height: 20px;
   }
+
   @media (min-width: @desktop-width) {
     min-width: 432px;
   }
 }
+
 .cat input:hover {
   border-color: #cdcdcd;
 }
+
 .cat input:active,
 .cat input:focus {
   border: 2px solid #444444;
 }
+
 .cat .cat__input--error {
   border: 2px solid #ff8282;
 }
+
 .cat label {
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-bottom: 28px;
+
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 10px;
-  align-self: flex-start;
-
-  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     margin-top: 11px;
+    margin-bottom: 36px;
     margin-left: 40px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 36px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 10px;
+    margin-left: 0;
     margin-bottom: 37px;
-    margin-left: 0px;
   }
 }
-
-
-

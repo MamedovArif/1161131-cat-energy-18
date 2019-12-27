@@ -1,13 +1,15 @@
 .additionally {
-  min-height: 377px;
-  border: none;
   position: relative;
 
+  min-height: 377px;
   padding: 0;
+
+  border: none;
 
   @media (min-width: @tablet-width) {
     min-height: 440px;
   }
+
   @media (min-width: @desktop-width) {
     min-height: 378px;
     padding: 0;
@@ -15,15 +17,14 @@
 }
 
 .additionally__wrapper {
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 .additionally__title-container {
   width: 320px;
   margin: 0 auto;
-
   margin-top: 27px;
 
   @media (min-width: @tablet-width) {
@@ -34,69 +35,77 @@
     width: 1300px;
   }
 }
+
 .additionally__title {
-  font-size: 24px;
-  line-height: 24px;
-  background-color: #ffffff;
-
   max-width: 184px;
-
-  margin-left: 0px;
-  font-weight: normal;
-  padding-right: 0px;
+  margin-left: 0;
+  padding-right: 0;
   padding-left: 18px;
   box-sizing: border-box;
 
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+
+  background-color: #ffffff;
+
   @media (min-width: @tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
     max-width: 291px;
-    padding-right: 41px;
-    padding-left: 41px;
     margin-top: 66px;
     margin-left: 29px;
+    padding-right: 41px;
+    padding-left: 41px;
+
+    font-size: 36px;
+    line-height: 36px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 51px;
-    padding-left: 39px;
     margin-left: 0;
+    padding-left: 39px;
   }
 }
+
 .additionally::before {
   content: "";
   position: absolute;
   top: 40px;
   left: 0;
+  z-index: -5;
+
   width: 100%;
   height: 3px;
+
   background-color: @bg-green;
-  z-index: -5;
 
   @media (min-width: @tablet-width) {
     top: 87px;
   }
+
   @media (min-width: @desktop-width) {
     top: 73px;
   }
 }
 
 .additionally__container {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   min-height: 300px;
   margin: 0 auto;
   margin-top: 34px;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
     width: 700px;
     min-height: 220px;
     margin-top: 56px;
     margin-bottom: 70px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
   }
+
   @media (min-width: @desktop-width) {
     width: 1220px;
     min-height: 155px;
@@ -106,54 +115,60 @@
 }
 
 .additionally label {
+  position: relative;
+
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 46px;
+
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 5px;
-  margin-left: 46px;
-  position: relative;
 
   @media (min-width: @tablet-width) {
+    align-self: flex-start;
+    min-width: 254px;
+
+    margin-top: 10px;
+    margin-bottom: 42px;
+    margin-left: 93px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-top: 10px;
-    margin-left: 93px;
-    min-width: 254px;
-    margin-bottom: 42px;
-    align-self: flex-start;
   }
+
   @media (min-width: @desktop-width) {
+    min-width: 234px;
     margin-top: 10px;
     margin-right: 37px;
     margin-left: 55px;
-
-    min-width: 234px;
   }
 }
 
 .additionally .additionally__vitamins {
   @media (min-width: @desktop-width) {
+    min-width: 0;
     margin-right: 0;
-    min-width: 0px;
   }
 }
-
 
 .additionally label::before {
   content: "";
   position: absolute;
   top: -6px;
   left: -45px;
+
   width: 28px;
   height: 29px;
+
   border: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
-    width: 39px;
-    height: 39px;
     top: -10px;
     left: -59px;
+
+    width: 39px;
+    height: 39px;
   }
 }
 
@@ -171,11 +186,14 @@
   position: absolute;
   top: 0px;
   left: -40px;
+
   width: 18px;
   height: 10px;
+
   background-color: transparent;
   border-bottom: 2px solid @bg-green;
   border-left: 2px solid @bg-green;
+
   transform: rotate(-45deg);
 
   @media (min-width: @tablet-width) {
@@ -185,42 +203,47 @@
 }
 .additionally__button {
   margin-top: 20px;
-  font-size: 16px;
-  line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 36px;
     width: 283px;
     height: 52px;
-    font-size: 20px;
-    line-height: 20px;
+    margin-left: 36px;
     margin-top: 22px;
     margin-right: 61px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
+
   @media (min-width: @desktop-width) {
-    margin-left: 2px;
     width: 568px;
     margin-top: 29px;
     margin-right: 81px;
+    margin-left: 2px;
   }
 }
+
 .additionally small {
   text-align: center;
   margin-top: 15px;
+
   font-size: 14px;
   line-height: 16px;
   font-family: "Arial", sans-serif;
 
   @media (min-width: @tablet-width) {
+    margin-top: 34px;
+
     font-size: 16px;
     line-height: 16px;
-    margin-top: 34px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 39px;
   }
 }
-

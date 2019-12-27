@@ -1,64 +1,73 @@
 .form-programs {
-  border: none;
-  width: 320px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #ededed;
+  width: 320px;
   min-height: 157px;
-
   margin: 0 auto;
   box-sizing: border-box;
 
+  border: none;
+  border: 1px solid #ededed;
+
   @media (min-width: @tablet-width) {
-    margin-top: 56px;
     width: 630px;
     min-height: 194px;
+    margin-top: 56px;
   }
+
   @media (min-width: @desktop-width) {
+    align-self: flex-start;
     width: 570px;
     margin-top: 65px;
     margin-right: 0;
-    align-self: flex-start;
   }
 }
+
 .form-programs__label {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+  position: relative;
 
   margin-top: 23px;
   margin-bottom: 2px;
   margin-left: 66px;
-  position: relative;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-top: 34px;
+    margin-bottom: 0;
+    margin-left: 88px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-top: 34px;
-    margin-bottom: 0px;
-    margin-left: 88px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 32px;
     margin-left: 87px;
   }
 }
+
 .form-programs__label::before {
   content: "";
   position: absolute;
   top: -8px;
   left: -47px;
+
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  border: 1px solid #cecece;
+
   background-color: transparent;
+  border: 1px solid #cecece;
+  border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    width: 39px;
-    height: 39px;
     top: -9px;
     left: -58px;
+
+    width: 39px;
+    height: 39px;
   }
 }
 
@@ -66,6 +75,7 @@
 .form-programs__label:focus::before {
   border-color: #bcbcbc;
 }
+
 .form-programs__label:active {
   opacity: 0.5;
 }
@@ -75,16 +85,18 @@
   position: absolute;
   top: 2px;
   left: -37px;
+
   width: 12px;
   height: 12px;
-  border-radius: 50%;
+
   background-color: @bg-green;
+  border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    width: 18px;
-    height: 18px;
     top: 2px;
     left: -47px;
+
+    width: 18px;
+    height: 18px;
   }
 }
-
