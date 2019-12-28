@@ -2,14 +2,14 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
 }
 @font-face {
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
 .page-header {
@@ -85,7 +85,7 @@
 .main-nav {
   position: relative;
   margin: 0;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -321,7 +321,7 @@
   margin: 0;
   padding: 0;
   margin-top: 28px;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
@@ -573,8 +573,8 @@
 @media (min-width: 768px) {
   .programs__title {
     max-width: 340px;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-left: 0;
     font-size: 36px;
     line-height: 37px;
   }
@@ -2003,7 +2003,7 @@
   max-width: 80px;
   margin-top: 22px;
   margin-left: 160px;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -2929,7 +2929,7 @@
   .owner__title {
     max-width: 596px;
     margin-top: 51px;
-    margin-left: 0px;
+    margin-left: 0;
     padding-right: 39px;
     padding-left: 39px;
   }
@@ -3398,7 +3398,7 @@ textarea {
     width: 1220px;
     min-height: 155px;
     margin-top: 56px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 .additionally label {
@@ -3463,7 +3463,7 @@ textarea {
 .additionally input:checked + label::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -40px;
   width: 18px;
   height: 10px;
@@ -3550,7 +3550,7 @@ body {
   max-width: 1520px;
   margin: 0;
   padding: 0;
-  font-weight: 400;
+  font-weight: normal;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: none;
   color: #000000;
