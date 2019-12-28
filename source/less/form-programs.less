@@ -1,80 +1,101 @@
 .form-programs {
-  border: none;
+  display: flex;
+  flex-direction: column;
   width: 320px;
-
+  min-height: 157px;
   margin: 0 auto;
-  height: 157px;
   box-sizing: border-box;
 
+  border: 1px solid #ededed;
+
   @media (min-width: @tablet-width) {
-    margin-top: 73px;
     width: 630px;
-    height: 194px;
+    min-height: 194px;
+    margin-top: 56px;
   }
+
   @media (min-width: @desktop-width) {
+    align-self: flex-start;
     width: 570px;
     margin-top: 65px;
     margin-right: 0;
   }
 }
-.form-programs__wrapper {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-  min-height: 157px
-}
+
 .form-programs__label {
+  position: relative;
+
+  margin-top: 23px;
+  margin-bottom: 2px;
+  margin-left: 66px;
+
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 
-  margin-top: 22px;
-  margin-bottom: 3px;
-  margin-left: 54px;
-  position: relative;
-
   @media (min-width: @tablet-width) {
+    margin-top: 34px;
+    margin-bottom: 0;
+    margin-left: 88px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-top: 28px;
-    margin-bottom: 5px;
-    margin-left: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 32px;
+    margin-left: 87px;
   }
 }
+
 .form-programs__label::before {
   content: "";
   position: absolute;
   top: -8px;
   left: -47px;
+
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  border: 1px solid red;
+
   background-color: transparent;
+  border: 1px solid #cecece;
+  border-radius: 50%;
 
   @media (min-width: @tablet-width) {
-    width: 39px;
-    height: 39px;
     top: -9px;
     left: -58px;
+
+    width: 39px;
+    height: 39px;
   }
 }
+
+.form-programs__label:hover::before,
+.form-programs__label:focus::before {
+  border-color: #bcbcbc;
+}
+
+.form-programs__label:active {
+  opacity: 0.5;
+}
+
 .form-programs__input:checked + label::after {
   content: "";
   position: absolute;
   top: 2px;
   left: -37px;
+
   width: 12px;
   height: 12px;
+
+  background-color: @bg-green;
   border-radius: 50%;
-  background-color: blue;
 
   @media (min-width: @tablet-width) {
-    width: 18px;
-    height: 18px;
     top: 2px;
     left: -47px;
+
+    width: 18px;
+    height: 18px;
   }
 }
-
