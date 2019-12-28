@@ -1,92 +1,114 @@
 .product-show {
-  min-height: 208px;
-  outline: 1px solid red;
-  padding: 80px 0 25px 0;
-  box-sizing: border-box;
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
   position: relative;
-}
-@media (min-width: @tablet-width) {
-  .product-show {
-  width: 323px;
-  height: 429px;
-  outline: 1px solid black;
+
+  width: 320px;
+  min-height: 208px;
+  padding: 58px 0 25px 0;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    min-height: 429px;
+
+    border: 1px solid #e6e6e6;
   }
 }
+
 @media (min-width: @desktop-width) {
   .product-show {
-  width: 245px;
-  height: 430px;
+    width: 243px;
+    min-height: 430px;
   }
 }
+
 .product-show__icon-plus-mobile {
   position: absolute;
+  top: 26px;
+  left: 145px;
+
   width: 30px;
   height: 30px;
-  top: 26px;
-  left: 125px;
+
   opacity: 0.4;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
+
 .product-show__icon-plus {
   @media (max-width: @mobile-width-only) {
     display: none;
   }
+
   position: absolute;
-  width: 60px;
-  height: 60px;
   top: 54px;
   left: 131px;
+
+  width: 60px;
+  height: 60px;
 
   @media (min-width: @desktop-width) {
     left: 94px;
   }
-
 }
+
 .product-show b {
   display: block;
-  text-align: center;
-  font-weight: 400;
-  text-transform: uppercase;
+  margin-top: 0;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
     width: 170px;
-    margin-top: 83px;
+    margin-top: 106px;
     margin-left: 74px;
+
+    font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 82px;
+    margin-top: 105px;
     margin-left: 36px;
   }
 }
+
 .product-show p {
   margin: 0;
   padding: 0;
   margin-top: 7px;
   margin-bottom: 22px;
-  font-family: "Arial";
-  text-align: center;
+
   font-size: 12px;
   line-height: 16px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 16px;
-    width: 140px;
-    margin-top: 26px;
+    width: 170px;
+    margin-top: 27px;
     margin-left: 74px;
-    outline: 1px solid red;
-    margin-bottom: 90px;
+    margin-bottom: 89px;
+
+    font-size: 16px;
   }
+
   @media (min-width: @desktop-width) {
-    margin-left: auto;
+    margin-top: 28px;
     margin-right: auto;
+    margin-left: auto;
   }
+}
+
+.product__link {
+  font-size: 16px;
+  line-height: 16px;
 }

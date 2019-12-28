@@ -1,40 +1,56 @@
 .product {
-  height: 209px;
-  outline: 1px solid black;
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #ededed;
+  }
   position: relative;
+
   display: flex;
   flex-direction: column;
+  min-height: 208px;
+  width: 320px;
+  margin: 0 auto;
 }
+
 @media (min-width: @tablet-width) {
   .product {
-    width: 323px;
-    height: 429px;
-    margin-bottom: 142px;
     position: relative;
+
+    width: 325px;
+    min-height: 429px;
+    margin: 0;
+    margin-bottom: 142px;
+
+    background-color: #f2f2f2;
   }
+
   .product:nth-child(7) {
     margin-bottom: 0;
   }
 }
+
 @media (min-width: @desktop-width) {
   .product {
     width: 245px;
-    height: 430px;
+    min-height: 430px;
     margin-bottom: 143px;
   }
+
   .product:nth-child(n + 5) {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
+
 .product__image {
-  outline: 1px solid red;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
 
   @media (min-width: @tablet-width) {
+    left: 0;
+
     width: 324px;
   }
+
   @media (min-width: @desktop-width) {
     width: 245px;
   }
@@ -43,36 +59,43 @@
 @media (min-width: @tablet-width) {
   .product__image--pro-chicken500 {
     top: -47px;
+
     height: 172px;
   }
 
   .product__image--pro-chicken1000 {
     top: -82px;
+
     height: 208px;
   }
 
   .product__image--pro-fish500 {
     top: -47px;
+
     height: 174px;
   }
 
   .product__image--pro-fish1000 {
     top: -82px;
+
     height: 208px;
   }
 
   .product__image--slim-buckwheat500 {
     top: -44px;
+
     height: 174px;
   }
 
   .product__image--slim-buckwheat1000 {
     top: -80px;
+
     height: 208px;
   }
 
   .product__image--slim-rice500 {
     top: -43px;
+
     height: 174px;
   }
 }
@@ -81,21 +104,27 @@
   .product__image--pro-chicken500 {
     height: 172px;
   }
+
   .product__image--pro-chicken1000 {
     height: 208px;
   }
+
   .product__image--pro-fish500 {
     height: 174px;
   }
+
   .product__image--pro-fish1000 {
     height: 208px;
   }
+
   .product__image--slim-buckwheat500 {
     height: 174px;
   }
+
   .product__image--slim-buckwheat1000 {
     height: 208px;
   }
+
   .product__image--slim-rice500 {
     height: 174px;
   }
@@ -104,59 +133,87 @@
 .product h3 {
   margin: 0;
   padding: 0;
+  max-width: 80px;
   margin-top: 22px;
-  margin-left: 140px;
-  text-transform: uppercase;
-  font-weight: 400;
+  margin-left: 160px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  max-width: 80px;
-  color: green;
-  outline: 1px solid blue;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
     max-width: 130px;
     margin-top: 162px;
     margin-left: 99px;
 
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 57px;
   }
 }
+
 .product__table {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Arial";
-  font-weight: bold;
   margin: 0;
   padding: 0;
-  margin-top: 9px;
-  margin-bottom: 13px;
-  margin-left: 140px;
+  margin-top: 11px;
+  margin-right: 18px;
+  margin-bottom: 21px;
+  margin-left: 159px;
 
-  outline: 1px solid red;
-  color: blue;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+
+  border-collapse: collapse;
 
   @media (min-width: @tablet-width) {
-    margin-top: 27px;
-    margin-right: 32px;
-    margin-bottom: 37px;
-    margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 35px;
+    margin-bottom: 33px;
+    margin-left: 37px;
+
     font-size: 16px;
-    font-family: 16px;
   }
 }
+
 .product__table td {
-  outline: 1px solid red;
+  padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
+
 .product__table .product__field {
   text-align: right;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 5px;
+  }
 }
+
 .product__link {
   display: block;
+  width: 280px;
   margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
