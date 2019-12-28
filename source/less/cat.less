@@ -1,85 +1,98 @@
 .cat {
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
   width: 320px;
   min-height: 190px;
   margin: 0 auto;
+  margin-top: 39px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 
+  border: none;
 
   @media (min-width: @tablet-width) {
     width: 710px;
+    min-height: 195px;
     margin-top: 65px;
-    height: 195px;
+    padding: 0;
   }
+
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-left: 0;
   }
 }
 
-.cat__wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  outline: 1px solid red;
-  margin-top: 39px;
-  margin-bottom: 14px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 0;
-  }
-}
-
-.cat__wrapper input {
+.cat input {
+  flex-grow: 1;
   margin: 0;
   padding: 0;
   height: 45px;
-
-  outline: 1px solid red;
+  min-width: 170px;
   margin-left: 16px;
-  min-width: 172px;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  font-family: "Oswald";
   padding-left: 12px;
   box-sizing: border-box;
-  flex-grow: 1;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  border: 1px solid #e6e6e6;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     min-width: 500px;
     height: 52px;
     margin-left: 21px;
+
     font-size: 20px;
     line-height: 20px;
   }
+
   @media (min-width: @desktop-width) {
     min-width: 432px;
   }
 }
-.cat__wrapper label {
+
+.cat input:hover {
+  border-color: #cdcdcd;
+}
+
+.cat input:active,
+.cat input:focus {
+  border: 2px solid #444444;
+}
+
+.cat .cat__input--error {
+  border: 2px solid #ff8282;
+}
+
+.cat label {
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-bottom: 28px;
+
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-top: 12px;
-  margin-left: 19px;
-  outline: 1px solid red;
-  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 11px;
+    margin-bottom: 36px;
     margin-left: 40px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 35px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 10px;
+    margin-left: 0;
     margin-bottom: 37px;
-    margin-left: 0px;
   }
 }
-
-
-

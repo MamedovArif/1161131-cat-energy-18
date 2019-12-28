@@ -1,14 +1,14 @@
 .product-add {
+  min-height: 127px;
+
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
-  height: 127px;
-  outline: 1px solid black;
 
   @media (min-width: @tablet-width) {
-    min-height: 139px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 139px;
     padding: 27px 37px 26px 37px;
     box-sizing: border-box;
   }
@@ -16,9 +16,10 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
-    min-height: 70px;
+    min-height: 72px;
     padding: 15px 0;
     box-sizing: border-box;
+    align-items: center;
   }
 }
 
@@ -27,50 +28,87 @@
   padding: 0;
   margin-top: 14px;
   margin-left: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    width: 300px;
+    margin-top: -2px;
+    margin-bottom: 15px;
+    margin-left: 2px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-top: -2px;
-    margin-left: 2px;
-    margin-bottom: 15px;
-    outline: 1px solid red;
-    width: 300px;
   }
+
   @media (min-width: @desktop-width) {
-    margin-top: 8px;
+    width: 286px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
-.product-add__table {
+
+.product-add__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+
   font-size: 14px;
   line-height: 14px;
-  font-family: "Arial";
-  outline: 1px solid red;
-  margin-bottom: 12px;
-  margin-left: -2px;
+  font-family: "Arial", sans-serif;
   vertical-align: middle;
-  display: flex;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 21px;
+
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 287px;
+    margin-top: 14px;
+    margin-bottom: auto;
   }
 }
+
+.product-add__list li:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    min-width: 45px;
+    margin-left: 51px;
+
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
 .product-add__link {
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-weight: normal;
+
   @media (min-width: @tablet-width) {
     width: 100%;
+    padding-top: 11px;
+    padding-bottom: 8px;
+
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    font-weight: bold;
   }
+
   @media (min-width: @desktop-width) {
     width: 245px;
-    height: 40px;
   }
 }
