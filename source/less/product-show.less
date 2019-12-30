@@ -108,7 +108,22 @@
   }
 }
 
-.product__link {
+.product-show__link {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  box-sizing: border-box;
+
   font-size: 16px;
-  line-height: 16px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 245px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
